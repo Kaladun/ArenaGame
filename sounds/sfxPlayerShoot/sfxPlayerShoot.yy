@@ -1,0 +1,14 @@
+{
+    "id": "1ae24b0f-47e3-42a1-96b8-ff2ddf7f6f9a",
+    "modelName": "GMSound",
+    "mvc": "1.0",
+    "name": "sfxPlayerShoot",
+    "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
+    "bitDepth": 1,
+    "bitRate": 128,
+    "kind": 0,
+    "preload": false,
+    "sampleRate": 44100,
+    "type": 0,
+    "volume": 0.4
+}

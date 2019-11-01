@@ -1,0 +1,1 @@
+return 0.4 - 0.4 * power(0.9, argument0)

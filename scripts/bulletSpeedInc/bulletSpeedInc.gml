@@ -1,0 +1,1 @@
+global.bulletSpeedBase += argument0

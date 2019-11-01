@@ -1,0 +1,1 @@
+return formulaCooldownMult(global.bulletCooldownBase)

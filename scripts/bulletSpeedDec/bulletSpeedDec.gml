@@ -1,0 +1,1 @@
+global.bulletSpeedBase = max(0, global.bulletSpeedBase - argument0)

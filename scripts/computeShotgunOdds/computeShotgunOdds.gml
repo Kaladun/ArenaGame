@@ -1,0 +1,1 @@
+return (formulaShotgunOdds(global.bulletShotgunBase) * argument0)

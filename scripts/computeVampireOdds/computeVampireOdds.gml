@@ -1,0 +1,1 @@
+return formulaVampireOdds(global.vampireBase)

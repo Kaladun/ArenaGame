@@ -1,0 +1,1 @@
+global.bulletShotgunBase += argument0

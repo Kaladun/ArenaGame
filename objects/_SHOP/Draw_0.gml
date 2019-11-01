@@ -1,0 +1,1 @@
+displayTrade(0, gx/2, gy/2)

@@ -1,0 +1,1 @@
+global.bulletCooldownBase += argument0

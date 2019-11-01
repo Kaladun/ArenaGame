@@ -1,0 +1,1 @@
+global.vampireBase = max(0, global.vampireBase - argument0)

@@ -1,0 +1,1 @@
+global.bulletShotgunBase = max(0, global.bulletShotgunBase - argument0)

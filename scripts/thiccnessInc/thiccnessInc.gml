@@ -1,0 +1,1 @@
+global.bulletThiccBase += argument0

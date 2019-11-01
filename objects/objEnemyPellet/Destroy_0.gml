@@ -1,0 +1,1 @@
+createFlash(3)

@@ -1,0 +1,1 @@
+return global.bulletHomingBase * 16

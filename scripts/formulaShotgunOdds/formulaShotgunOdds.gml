@@ -1,0 +1,1 @@
+return sqrt(argument0)

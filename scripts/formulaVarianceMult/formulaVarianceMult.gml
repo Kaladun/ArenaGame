@@ -1,0 +1,1 @@
+return power(0.95, argument0)

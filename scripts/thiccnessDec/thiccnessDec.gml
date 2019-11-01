@@ -1,0 +1,1 @@
+global.bulletThiccBase = max(0, global.bulletThiccBase - argument0)

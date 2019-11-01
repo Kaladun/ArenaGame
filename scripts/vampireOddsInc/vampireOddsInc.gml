@@ -1,0 +1,1 @@
+global.vampireBase += argument0

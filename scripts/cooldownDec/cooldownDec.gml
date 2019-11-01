@@ -1,0 +1,1 @@
+global.bulletCooldownBase = max(0, global.bulletCooldownBase - argument0)

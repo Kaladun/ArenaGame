@@ -1,0 +1,1 @@
+global.bulletVarianceBase = max(0, global.bulletVarianceBase - argument0)

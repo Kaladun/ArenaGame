@@ -1,0 +1,1 @@
+return irandom_range(0,1) * 2 - 1

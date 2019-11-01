@@ -1,0 +1,1 @@
+return sqrt(1 + 0.067 * argument0)

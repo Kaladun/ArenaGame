@@ -1,0 +1,1 @@
+return formulaThiccness(global.bulletThiccBase)

@@ -1,0 +1,28 @@
+waveBase = 2 * global.waveNumber + 1
+
+_ENEMYSPAWNER.totalSpawn = waveBase + 2 * global.burstNumber
+_ENEMYSPAWNER.armoredSpawn = 0
+_ENEMYSPAWNER.phantomSpawn = 0
+_ENEMYSPAWNER.kamikazeSpawn = 0
+
+var specialSpawn = ceil(global.waveNumber/2) - 2 + global.burstNumber
+//var specialSpawn = floor(power(max(0, floor(global.waveNumber)-2),0.7))
+//createTextPop(300,300,"SPAWN:"+string(specialSpawn))
+
+while(specialSpawn > 0) {
+	r = irandom_range(0,2)
+	
+	if r = 0 then {
+		_ENEMYSPAWNER.armoredSpawn += 1
+	} else if r = 1 then {
+		_ENEMYSPAWNER.kamikazeSpawn += 3
+		_ENEMYSPAWNER.totalSpawn += 2
+	} else if r = 2 then {
+		_ENEMYSPAWNER.phantomSpawn += 1	
+	}
+//_ENEMYSPAWNER.phantomSpawn = 0//specialSpawn - _ENEMYSPAWNER.armoredSpawn
+
+	specialSpawn--
+}
+
+_ENEMYSPAWNER.upgradeCap = _ENEMYSPAWNER.totalSpawn //min(5+global.waveNumber,_ENEMYSPAWNER.totalSpawn)

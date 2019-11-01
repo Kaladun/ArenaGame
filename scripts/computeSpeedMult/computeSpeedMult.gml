@@ -1,0 +1,1 @@
+return 1 //formulaSpeedMult(global.actorSpeedBase)

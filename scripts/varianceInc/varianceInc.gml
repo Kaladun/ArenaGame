@@ -1,0 +1,1 @@
+global.bulletVarianceBase += argument0
