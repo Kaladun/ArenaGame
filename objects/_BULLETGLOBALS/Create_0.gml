@@ -27,7 +27,7 @@ global.totalScore = 0
 global.money = 0
 
 global.comboLevel = 1
-global.comboLevelMax = 4
+global.comboLevelMax = 5
 global.comboTimer = 0
 global.comboTimerMax = 4 * room_speed
 

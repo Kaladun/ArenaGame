@@ -19,5 +19,8 @@ if global.comboTimer <= 0 then {
 }
 
 global.comboGoal = 2 * global.comboLevel
-global.comboTimerMax = (7 - global.comboLevel) * room_speed
+if global.comboLevel = 5 then {
+	global.comboGoal = 0	
+}
+global.comboTimerMax = (7.5 - global.comboLevel) * room_speed
 global.comboTimer = clamp(global.comboTimer, 0, global.comboTimerMax)

@@ -44,6 +44,7 @@ if not isDead {
 				var grenade = instance_create_depth(x,y,-50,objGrenade)	
 				grenade.direction = image_angle + random_range(-2,2) + random_range(-2,2)
 				grenade.speed = grenadeVel
+				grenade.speedMax = grenadeVel
 				
 				grenadeCount--	
 				grenadeVel = 0

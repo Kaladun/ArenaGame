@@ -28,10 +28,12 @@ if instance_exists(objPlayer) then {
 	drawShadeText(drawX, 15, "WAVE: " + string(global.waveNumber+1) + "-" + string(global.burstNumber+1), c_white)
 	drawShadeText(drawX, 27, "$: " + string(global.money), c_white)
 	
-	color = c_white
 	draw_set_halign(fa_center)
-	if global.comboLevel = global.comboLevelMax then {color = c_aqua}
-	drawShadeText(comboM, 3, "COMBO: x" + string(global.comboLevel), color)
+	if global.comboLevel = global.comboLevelMax then {
+		drawShadeText(comboM, 3, "COMBO MAX!", c_aqua)
+	} else {
+		drawShadeText(comboM, 3, "COMBO: x" + string(global.comboLevel), c_white)
+	}
 	
 	draw_set_color(c_dkgray)
 	draw_rectangle(comboX-1,comboY-1,comboX+comboW+1,comboY+comboH+1,0)
@@ -43,6 +45,11 @@ if instance_exists(objPlayer) then {
 	if global.comboKills > 0 then {
 		draw_set_color(c_blue)
 		draw_rectangle(comboX,comboY,comboX + cbar*global.comboKills,comboY+6,0)
+	}
+	
+	if global.comboLevel = global.comboLevelMax then {
+		draw_set_color(c_aqua)
+		draw_rectangle(comboX,comboY,comboX+comboW,comboY+6,0)
 	}
 	
 	draw_set_color(c_gray)
