@@ -3,6 +3,8 @@ if not ds_list_find_index(hitList, other.id) then {
 	if not other.bulletImmune then {
 		other.isHurt = true
 		other.hp -= damage
+		other.hurtKnockback = 3
+		other.hurtDirection = direction
 	}
 
 	if not other.projectilePass then {

@@ -1,4 +1,4 @@
 global.money += value
 instance_destroy()
 
-createTextPop(x,y,"$")
+//createTextPop(x,y,"$")

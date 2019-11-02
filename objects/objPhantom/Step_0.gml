@@ -2,7 +2,7 @@ event_inherited()
 
 fireTimer--
 
-moveBasic(lengthdir_x(currentVel, dir), lengthdir_y(currentVel, dir))
+aiMoveBasic()
 moveOffScreen()
 
 target_angle = point_direction(x,y,objPlayer.x,objPlayer.y)

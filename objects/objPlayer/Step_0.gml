@@ -103,6 +103,10 @@ if not isDead {
 	
 	
 	depth = -y
+	
+	if hurt = hurtMax - 1 then {
+		comboDamagePenalty()
+	}	
 }
 
 

@@ -20,3 +20,4 @@ dir = 90 * irandom_range(0,3)
 hasArmor = true
 
 image_speed = 0
+scoreBase = 3

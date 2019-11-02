@@ -20,8 +20,7 @@ if point_distance(x,y,objPlayer.x,objPlayer.y) <= chaseRange and chaseDelay <= 0
 	vel = velDefault
 }	
 
-
-moveBasic(lengthdir_x(currentVel, dir), lengthdir_y(currentVel, dir))
+aiMoveBasic()
 moveOffScreen()
 
 x = clamp(x,6,room_width-6)

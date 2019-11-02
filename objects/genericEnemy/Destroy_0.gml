@@ -3,3 +3,4 @@ if random(1) < computeVampireOdds() then {
 }
 
 comboAddKill()
+scoreAddKill(scoreBase)

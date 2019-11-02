@@ -1,6 +1,5 @@
 global.upgradeCount++
-
-global.totalScore += max(1,round(sqrt(argument0)))
+global.totalScore++
 
 /*
 global.comboTimer += global.comboTimerBoost

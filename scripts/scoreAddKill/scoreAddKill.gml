@@ -1,0 +1,1 @@
+global.totalScore += global.comboLevel * argument0

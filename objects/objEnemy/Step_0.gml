@@ -19,7 +19,7 @@ if stateTimer <= 0 then {
 }
 
 if state = 0 then {
-	moveBasic(lengthdir_x(currentVel, dir), lengthdir_y(currentVel, dir))
+	aiMoveBasic()
 	moveOffScreen()
 } else if state = 1 then {
 	if stateTimer > fireTimer then {

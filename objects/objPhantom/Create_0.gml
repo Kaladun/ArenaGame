@@ -26,3 +26,5 @@ image_angle = dir
 t = 0 
 image_alpha = 0.5
 c_base = merge_color(c_white, c_purple, 0.5)
+
+scoreBase = 3
