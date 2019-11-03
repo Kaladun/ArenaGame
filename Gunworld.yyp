@@ -1103,6 +1103,14 @@
             }
         },
         {
+            "Key": "977ae1b1-1faf-4a60-a7a8-1ed96ecf2eaa",
+            "Value": {
+                "id": "5c115439-a0b8-4291-b036-dd89f570ed73",
+                "resourcePath": "scripts\\wallSquare\\wallSquare.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "98513fae-7302-4100-a7e2-95eb9f36d337",
             "Value": {
                 "id": "6ec0579f-0e54-4e29-8fbe-520b0eb2a1a4",
@@ -1623,6 +1631,14 @@
             }
         },
         {
+            "Key": "fb88a9b4-b867-48aa-b478-cbad9a996a2a",
+            "Value": {
+                "id": "943fbae7-3753-49f4-a8ab-3febde0cf14b",
+                "resourcePath": "sprites\\sBackground\\sBackground.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fd38cc85-c9bc-499d-bd46-2e31bbbc9949",
             "Value": {
                 "id": "be2ff7fe-ffaa-44b5-b154-251f58bb9578",
@@ -1715,7 +1731,8 @@
         "f02b3890-eb2b-422c-b049-04c4edb41f5a",
         "46e92625-f01f-4b56-840e-ddf7807a89b9",
         "744bcf86-ee43-4ea7-8135-8a56b10261cc",
-        "85529921-7c35-44d2-80b5-56b737774a17"
+        "85529921-7c35-44d2-80b5-56b737774a17",
+        "977ae1b1-1faf-4a60-a7a8-1ed96ecf2eaa"
     ],
     "tutorial": ""
 }

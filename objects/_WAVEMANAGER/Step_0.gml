@@ -13,6 +13,12 @@ if _ENEMYSPAWNER.totalSpawn = 0 and not waveFinished and not waveStartNew then {
 
 if waveStartNew then {
 	
+	with(objWall) {
+		if feature then {
+			instance_destroy()	
+		}
+	}	
+	
 	radiusX = (radiusBaseX + floor(sqrt(2*global.waveNumber))) * block
 	radiusY = (radiusBaseY + floor(sqrt(2*global.waveNumber))) * block
 	
@@ -84,42 +90,21 @@ if waveStartNew then {
 		}
 	}
 	
-	/*
-	wallLeft = instance_create_depth(-64,-64,0,objWall)
-	wallLeft.image_xscale = (64 + leftX)/block
-	wallLeft.image_yscale = (64 + room_height)/block
-	
-	wallRight = instance_create_depth(rightX,-64,0,objWall)
-	wallRight.image_xscale = (room_width - rightX + 64)/block
-	wallRight.image_yscale = (64 + room_height)/block
-	
-	wallTop = instance_create_depth(0,-64,0,objWall)
-	wallTop.image_xscale = (room_width)/block
-	wallTop.image_yscale = (64 + topY)/block
-	
-	wallBottom = instance_create_depth(0,bottomY,0,objWall)
-	wallBottom.image_xscale = (room_width)/block
-	wallBottom.image_yscale = (64 + room_height - bottomY)/block
-	*/
-	
-/*	specialFeature = choose("none", "none", "corners", "center", "pillars")
+	var specialFeature = choose("none", "corners", "center", "pillars")
 	
 	if specialFeature = "corners" then {
-		wallC1 = instance_create_depth(leftX,topY,0,objWall)
-		wallC2 = instance_create_depth(leftX,bottomY - block,0,objWall)
-		wallC3 = instance_create_depth(rightX - block,topY,0,objWall)
-		wallC4 = instance_create_depth(rightX - block, bottomY - block,0,objWall)
+		wallSquare(leftX + block, topY + block, 2, 2)
+		wallSquare(leftX + block, bottomY - 2 * block, 2, 2)
+		wallSquare(rightX - 2 * block, topY + block, 2, 2)
+		wallSquare(rightX - 2 * block, bottomY - 2 * block, 2, 2)
 	} else if specialFeature = "center" then {
-		wallC1 = instance_create_depth(centerX - block, centerY - block ,0,objWall)
-		wallC2 = instance_create_depth(centerX - block, centerY ,0,objWall)
-		wallC3 = instance_create_depth(centerX, centerY - block ,0,objWall)
-		wallC4 = instance_create_depth(centerX, centerY ,0,objWall)
+		wallSquare(centerX - 1 * block, centerY - 1 * block, 3, 3)
 	} else if specialFeature = "pillars" then {
-		wallC1 = instance_create_depth(centerX - 2*block, centerY - 2*block ,0,objWall)
-		wallC2 = instance_create_depth(centerX - 2*block, centerY + block,0,objWall)
-		wallC3 = instance_create_depth(centerX + block, centerY - 2*block,0,objWall)
-		wallC4 = instance_create_depth(centerX + block, centerY + block,0,objWall)
-	}*/
+		wallSquare(centerX - 3 * block, centerY - 3 * block, 2, 2)
+		wallSquare(centerX - 3 * block, centerY + 2 * block, 2, 2)
+		wallSquare(centerX + 2 * block, centerY - 3 * block, 2, 2)
+		wallSquare(centerX + 2 * block, centerY + 2 * block, 2, 2)
+	}
 
 	with(objWall) {
 		update = true	
