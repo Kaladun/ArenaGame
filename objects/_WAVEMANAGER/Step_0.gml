@@ -27,10 +27,10 @@ if waveStartNew then {
 	topY = (centerY - radiusY)
 	bottomY = (centerY + radiusY)
 	
-	leftWX = leftX - 2 * block
-	rightWX = rightX + 2 * block
-	topWY = topY - 2 * block
-	bottomWY = bottomY + 2 * block
+	leftWX = leftX - 3 * block
+	rightWX = rightX + 3 * block
+	topWY = topY - 3 * block
+	bottomWY = bottomY + 3 * block
 	
 	iMin = leftWX - buffer
 	iMax = rightWX + buffer
@@ -90,7 +90,12 @@ if waveStartNew then {
 		}
 	}
 	
-	var specialFeature = choose("none", "corners", "center", "pillars")
+	var specialFeature = "none"
+	if global.waveNumber > 4 then {
+		var specialFeature = choose("none", "corners", "center", "pillars", "bulkycorners", "bulkycenter", "walls")
+	} else if global.waveNumber > 1{
+		var specialFeature = choose("none", "corners", "center", "pillars")
+	}	
 	
 	if specialFeature = "corners" then {
 		wallSquare(leftX + block, topY + block, 2, 2)
@@ -104,6 +109,22 @@ if waveStartNew then {
 		wallSquare(centerX - 3 * block, centerY + 2 * block, 2, 2)
 		wallSquare(centerX + 2 * block, centerY - 3 * block, 2, 2)
 		wallSquare(centerX + 2 * block, centerY + 2 * block, 2, 2)
+	} else if specialFeature = "bulkycorners" then {
+		wallSquare(leftX + block, topY + block, 3, 2)
+		wallSquare(leftX + block, topY + 3 * block, 2, 1)
+		wallSquare(leftX + block, bottomY - 2 * block, 3, 2)
+		wallSquare(leftX + block, bottomY - 3 * block, 2, 1)
+		wallSquare(rightX - 3 * block, topY + block, 3, 2)
+		wallSquare(rightX - 2 * block, topY + 3 * block, 2, 1)
+		wallSquare(rightX - 3 * block, bottomY - 2 * block, 3, 2)
+		wallSquare(rightX - 2 * block, bottomY - 3 * block, 2, 1)
+	} else if specialFeature = "bulkycenter" then {
+		wallSquare(centerX - 2 * block, centerY - 1 * block, 5, 3)
+		wallSquare(centerX - 1 * block, centerY - 2 * block, 3, 1)
+		wallSquare(centerX - 1 * block, centerY + 2 * block, 3, 1)
+	} else if specialFeature = "walls" then {
+		wallSquare(centerX - 3 * block, centerY - 3 * block, 7, 1)
+		wallSquare(centerX - 3 * block, centerY + 3 * block, 7, 1)
 	}
 
 	with(objWall) {

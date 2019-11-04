@@ -28,11 +28,15 @@ if instance_exists(objPlayer) then {
 	drawShadeText(drawX, 15, "WAVE: " + string(global.waveNumber+1) + "-" + string(global.burstNumber+1), c_white)
 	drawShadeText(drawX, 27, "$: " + string(global.money), c_white)
 	
+	var clr = (global.comboLevel - 1) / (2 * (global.comboLevelMax - 1))
+	if global.comboLevel = global.comboLevelMax then {clr = 1}
+	var colText = merge_color(c_white, c_aqua, clr)
+	
 	draw_set_halign(fa_center)
 	if global.comboLevel = global.comboLevelMax then {
-		drawShadeText(comboM, 3, "COMBO MAX!", c_aqua)
+		drawShadeText(comboM, 3, "COMBO MAX!", colText)
 	} else {
-		drawShadeText(comboM, 3, "COMBO: x" + string(global.comboLevel), c_white)
+		drawShadeText(comboM, 3, "COMBO: x" + string(global.comboLevel), colText)
 	}
 	
 	draw_set_color(c_dkgray)
@@ -42,13 +46,14 @@ if instance_exists(objPlayer) then {
 	draw_rectangle(comboX,comboY+8,comboX+comboW,comboY+comboH,0)
 	
 	var cbar = comboW / global.comboGoal 
+	var colBar = merge_color(c_blue, c_aqua, clr)
+	draw_set_color(colBar)
+
 	if global.comboKills > 0 then {
-		draw_set_color(c_blue)
 		draw_rectangle(comboX,comboY,comboX + cbar*global.comboKills,comboY+6,0)
 	}
 	
 	if global.comboLevel = global.comboLevelMax then {
-		draw_set_color(c_aqua)
 		draw_rectangle(comboX,comboY,comboX+comboW,comboY+6,0)
 	}
 	
@@ -58,8 +63,9 @@ if instance_exists(objPlayer) then {
 	}
 	
 	if global.comboTimer > 0 then {
-		draw_set_color(c_maroon)
-		draw_rectangle(comboX,comboY+8,comboX+comboW*(global.comboTimer/global.comboTimerMax),comboY+comboH,0)
+		var ctr = global.comboTimer / global.comboTimerMax
+		draw_set_color(merge_color(c_red,c_maroon, smoothstep(1.2 * ctr - 0.1)))
+		draw_rectangle(comboX,comboY+8,comboX+comboW*ctr,comboY+comboH,0)
 	}
 	
 	draw_text(30,240,fps_real)

@@ -1,6 +1,6 @@
 timer--
 
-if timer = 30 then {
+if timer = blastTime then {
 	with(genericEnemy) {
 		if point_distance(x,y,other.x,other.y) <= other.radius + sprite_width/2 and not grenadeImmune then {
 			hp -= other.enemyDamage

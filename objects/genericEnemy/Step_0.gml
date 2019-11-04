@@ -16,3 +16,5 @@ if hp <= 0 then {
 }
 
 currentVel = vel * computeVelocity(slowTimer) 
+
+depth = -y
