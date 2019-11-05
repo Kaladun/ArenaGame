@@ -24,6 +24,10 @@ if hurt > 0 then {
 	draw_self()
 	shader_reset()
 	hurt--
+	
+	if hurt <= 0 then {
+		room_speed = 60		
+	}
 } else {
 	draw_self()	
 }

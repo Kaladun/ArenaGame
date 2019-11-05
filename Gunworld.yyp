@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "06a88986-0f60-45ff-90dd-260c6b036213",
+            "Value": {
+                "id": "3bcca8cf-a388-4499-b933-0435418e027d",
+                "resourcePath": "sprites\\sprVignette\\sprVignette.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "06d75ecc-3759-459e-8bb7-bfca9df2e7d8",
             "Value": {
                 "id": "afe3a1df-b770-46ba-8c57-8268e2f95cde",
