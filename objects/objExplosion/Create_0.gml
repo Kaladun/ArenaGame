@@ -13,3 +13,5 @@ screenShake(12)
 sleep(6)
 
 audioPlayPitch(sfxExplosion, 1, 0.1)
+
+depth = -2000

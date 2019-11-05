@@ -15,7 +15,11 @@ if speed > 0 then {
 	height = 0
 }
 
-projectileBounce()
+var pb = projectileBounce()
+if pb then {
+	speed *= 0.5
+	speedMax *= 0.5
+}
 
 if timer <= 0 then {
 	instance_destroy()
