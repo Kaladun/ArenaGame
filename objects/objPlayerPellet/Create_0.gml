@@ -1,4 +1,4 @@
-speedMax = 5 * (1 + 0.4 * (computeBulletSpeedMult() - 1))
+speedMax = 5 * (1 + 0.6 * (computeBulletSpeedMult() - 1))
 speed = speedMax
 
 tMax = irandom_range(25,30)

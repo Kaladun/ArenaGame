@@ -11,7 +11,7 @@ locShotgunOdds += random(1)
 
 while (locShotgunOdds >= 1) {
 	var pb = instance_create_depth(px,py,-100,objPlayerPellet)
-	pb.direction = argument1 + pm() * random_range(10,45) 
+	pb.direction = argument1 + pm() * random_range(5,45 + global.bulletShotgunBase) 
 	locShotgunOdds--
 	
 	createShell(px,py,argument1)

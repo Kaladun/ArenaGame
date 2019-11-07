@@ -1135,6 +1135,14 @@
             }
         },
         {
+            "Key": "9a9c880c-73ef-42c7-b086-1e9fac54c739",
+            "Value": {
+                "id": "5480e878-d59d-467e-9e65-d20793782543",
+                "resourcePath": "objects\\objGunner\\objGunner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9b193f30-fcb5-47ae-be9e-733b89b2a198",
             "Value": {
                 "id": "4021d2a3-2e7d-4e52-961d-c6916fa998c2",
@@ -1436,6 +1444,14 @@
                 "id": "85399146-5c5c-40b0-b424-f78d9ac5a96a",
                 "resourcePath": "views\\d05a26c7-2d7e-44e8-b22a-081c4b8af672.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d13e7c30-ed94-4264-9bb0-3945838a2195",
+            "Value": {
+                "id": "dddb90a8-e60b-4bf8-b20c-949f44c8248c",
+                "resourcePath": "sprites\\sprGunner\\sprGunner.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

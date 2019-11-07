@@ -1,6 +1,6 @@
 waveBase = 2 * global.waveNumber + 1
 
-_ENEMYSPAWNER.totalSpawn = waveBase + 2 * global.burstNumber
+_ENEMYSPAWNER.totalSpawn = waveBase + 3 * global.burstNumber
 _ENEMYSPAWNER.armoredSpawn = 0
 _ENEMYSPAWNER.phantomSpawn = 0
 _ENEMYSPAWNER.kamikazeSpawn = 0
