@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "12987302-7bd1-463d-bcfe-2a0f64626de0",
+            "Value": {
+                "id": "cb4d249d-d25b-4b80-ae16-14adb09c83b3",
+                "resourcePath": "scripts\\drawPlayer\\drawPlayer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "13d2089c-3645-48c8-838b-a495f7f996d3",
             "Value": {
                 "id": "a309a6af-b7a4-4556-bb0f-d8360916b39f",
@@ -1295,6 +1303,14 @@
             }
         },
         {
+            "Key": "b52dae71-00b2-403f-afda-2cd6eb760075",
+            "Value": {
+                "id": "4a146cce-7623-4ba9-85a5-eda2a1edade1",
+                "resourcePath": "sprites\\sprDebrisBlood\\sprDebrisBlood.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b59e12a5-4ce9-435d-8bdd-44ec4cccf168",
             "Value": {
                 "id": "2b128df0-eb69-448b-b674-959a162254aa",
@@ -1395,6 +1411,14 @@
             "Value": {
                 "id": "a773b9d8-7bfe-48e6-a301-be56ee02e37c",
                 "resourcePath": "scripts\\formulaVarianceMult\\formulaVarianceMult.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ca7eed31-64b8-486c-a5e5-b3465d4c5663",
+            "Value": {
+                "id": "cf067c8f-1480-4936-a444-c03d590f8207",
+                "resourcePath": "scripts\\createBloodSplatter\\createBloodSplatter.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1639,6 +1663,14 @@
             }
         },
         {
+            "Key": "f563e25a-ca2c-4db9-ba1a-d1defc935a9d",
+            "Value": {
+                "id": "5af9472a-cab0-4eda-a0d6-e031073d3a29",
+                "resourcePath": "sprites\\sprPlayerGun\\sprPlayerGun.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f61da3c0-53b7-4ba4-98a6-861e61092163",
             "Value": {
                 "id": "1b281a7d-ce53-4331-bef5-1089254a6576",
@@ -1689,6 +1721,7 @@
     ],
     "script_order": [
         "9669c902-381c-4605-9753-5eb916b06fd2",
+        "12987302-7bd1-463d-bcfe-2a0f64626de0",
         "3f5b7ce5-3cef-433c-8a11-d9fe965a48b0",
         "258010a4-020e-45a1-9a9e-381431b969a7",
         "4d5ad1db-f1e4-4a9a-b99f-8079d08f3c0d",
@@ -1765,7 +1798,8 @@
         "46e92625-f01f-4b56-840e-ddf7807a89b9",
         "744bcf86-ee43-4ea7-8135-8a56b10261cc",
         "85529921-7c35-44d2-80b5-56b737774a17",
-        "977ae1b1-1faf-4a60-a7a8-1ed96ecf2eaa"
+        "977ae1b1-1faf-4a60-a7a8-1ed96ecf2eaa",
+        "ca7eed31-64b8-486c-a5e5-b3465d4c5663"
     ],
     "tutorial": ""
 }

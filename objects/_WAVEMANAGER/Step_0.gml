@@ -13,11 +13,11 @@ if _ENEMYSPAWNER.totalSpawn = 0 and not waveFinished and not waveStartNew then {
 
 if waveStartNew then {
 	
-	with(objWall) {
+	/*with(objWall) {
 		if feature then {
 			instance_destroy()	
 		}
-	}	
+	}*/	
 	
 	radiusX = (radiusBaseX + floor(sqrt(2*global.waveNumber))) * block
 	radiusY = (radiusBaseY + floor(sqrt(2*global.waveNumber))) * block

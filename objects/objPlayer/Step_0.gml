@@ -9,7 +9,16 @@ if not isDead {
 		moveOffScreen()
 		
 		dir = inputDirection()
-		image_angle = dir
+		if dir <= 90 then {
+			drawGunAngle = dir / 2
+			image_xscale = 1
+		} else if dir <= 270 then {
+			drawGunAngle = (dir - 180) / 2
+			image_xscale = -1
+		} else {
+			drawGunAngle = (dir - 360) / 2
+			image_xscale = 1
+		} 
 		
 	// BULLET
 
@@ -17,17 +26,17 @@ if not isDead {
 			bulletCooldown = ceil(bulletCooldownMax * computeCooldownMult())
 			bulletQueue = false
 			
-			playerFireBullet(objPlayerBullet, image_angle)
+			playerFireBullet(objPlayerBullet, dir)
 			
 			if random(1) < computeBackblastOdds() then {
-				playerFireBullet(objPlayerBullet, image_angle + 180)	
+				playerFireBullet(objPlayerBullet, dir + 180)	
 			}
 			
 			audioPlayPitch(sfxPlayerShoot, 1, 0.1)
 			screenShake(3)
 			
-			x += lengthdir_x(bulletKick, image_angle)
-			y += lengthdir_y(bulletKick, image_angle)
+			x += lengthdir_x(bulletKick, dir)
+			y += lengthdir_y(bulletKick, dir)
 			
 		} else if _INPUT.shootPressed {
 			bulletQueue = true
@@ -42,7 +51,7 @@ if not isDead {
 		
 			} else if _INPUT.grenadeReleased then {		
 				var grenade = instance_create_depth(x,y,-50,objGrenade)	
-				grenade.direction = image_angle + random_range(-2,2) + random_range(-2,2)
+				grenade.direction = dir + random_range(-2,2) + random_range(-2,2)
 				grenade.speed = grenadeVel
 				grenade.speedMax = grenadeVel
 				
@@ -63,10 +72,9 @@ if not isDead {
 			if dx != 0 or dy != 0 then {
 				dashDir = darctan2(-dy, dx)
 			} else {
-				dashDir = round(image_angle / 45) * 45
+				dashDir = round(dir / 45) * 45
 			}
 			
-			image_angle = dashDir
 			dashTimer = dashTimerMax
 			isDashing = true
 		}
