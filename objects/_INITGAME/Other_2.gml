@@ -5,7 +5,7 @@ audio_play_sound(msxRhinoceros, 1, 1)
 // DISPLAY SHIT
 
 global.fullscreen = false
-global.cameraScale = 4
+global.cameraScale = 3
 
 if not global.fullscreen then {
 
@@ -15,9 +15,6 @@ if not global.fullscreen then {
 	global.gameHeight = 256
 	global.windowWidth = global.gameWidth * global.cameraScale
 	global.windowHeight = global.gameHeight * global.cameraScale
-
-	global.trueScaleX = global.cameraScale
-	global.trueScaleY = global.cameraScale
 
 	window_set_size(global.windowWidth, global.windowHeight)
 	
@@ -30,9 +27,6 @@ if not global.fullscreen then {
 	global.windowHeight = display_get_height()
 	global.gameWidth = ceil(global.windowWidth / global.cameraScale)
 	global.gameHeight = ceil(global.windowHeight / global.cameraScale)
-
-	global.trueScaleX = global.windowWidth / global.gameWidth
-	global.trueScaleY = global.windowHeight / global.gameHeight
 }
 
 surface_resize(application_surface, global.gameWidth, global.gameHeight)

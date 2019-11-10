@@ -10,14 +10,20 @@ if stateTimer <= 0 then {
 aiMoveBasic()
 moveOffScreen()
 
+targetX = objPlayer.x
+targetY = objPlayer.y
+
 gunTimer--
-if gunTimer = gunTimerLock then {
-	targetX = objPlayer.x
-	targetY = objPlayer.y
-} else if gunTimer <= 0 then {
+if gunTimer <= 0 then {
 	gunTimer = gunTimerMax
 	var d = point_direction(x,y,targetX,targetY)
-	phantomFireBullet(d)
+	gunnerFireBullet(d)
+	
+	burstCounter++
+	if burstCounter >= burstCounterMax then {
+		burstCounter = 0
+		gunTimer += gunTimerBonus
+	}	
 }
 
 image_angle = point_direction(x,y,targetX,targetY)

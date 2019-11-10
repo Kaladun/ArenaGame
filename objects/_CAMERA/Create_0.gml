@@ -1,6 +1,3 @@
-cameraX = 64
-cameraY = 64
-
 cameraW = global.gameWidth
 cameraH = global.gameHeight
 
@@ -9,6 +6,9 @@ cameraH2 = cameraH / 2
 
 cameraTargetX = room_width / 2
 cameraTargetY = room_height / 2
+
+cameraX = cameraTargetX - cameraW2
+cameraY = cameraTargetY - cameraH2
 
 cameraSpeed = 0.1
 cameraLockRad = 0.1

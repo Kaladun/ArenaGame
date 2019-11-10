@@ -1,25 +1,28 @@
 event_inherited()
 
-hp = 7
+hp = 5
 
 
 // BEHAVIOR CONTROL
 
 state = 0
-stateTimerMin = 90
-stateTimerMax = 120
+stateTimerMin = 60
+stateTimerMax = 180
 stateTimer = irandom_range(stateTimerMin, stateTimerMax)
 
 fireTimer = 15
 
 gunTimer = 135
-gunTimerMax = 45
-gunTimerLock = 40
+gunTimerMax = 10
+gunTimerBonus = 360
+
+burstCounter = 0
+burstCounterMax = 9
 
 targetX = x 
 targetY = y + 500
 
-vel = 0.8 * computeSpeedMult()
+vel = 0.5 * computeSpeedMult()
 dir = 90 * irandom_range(0,3)
 
 scoreBase = 1

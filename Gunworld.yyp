@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "25bdd914-1659-492e-86fc-20c427a39a87",
+            "Value": {
+                "id": "a50319f1-9510-47dd-9b0c-d719f55efd9d",
+                "resourcePath": "scripts\\gunnerFireBullet\\gunnerFireBullet.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "25cfc4df-c2e8-443a-aeec-eaf224278e79",
             "Value": {
                 "id": "80346706-e3d1-4805-bdc2-3fd3dcbe0fdb",
@@ -1684,6 +1692,7 @@
         "3f5b7ce5-3cef-433c-8a11-d9fe965a48b0",
         "258010a4-020e-45a1-9a9e-381431b969a7",
         "4d5ad1db-f1e4-4a9a-b99f-8079d08f3c0d",
+        "25bdd914-1659-492e-86fc-20c427a39a87",
         "b07a5033-89e6-45d1-b58d-6ac7bbc5b63f",
         "22ab5923-cf9d-4508-b768-dd78e01e4c81",
         "4a24ee19-e6e8-48da-a8e4-716659ab25f5",

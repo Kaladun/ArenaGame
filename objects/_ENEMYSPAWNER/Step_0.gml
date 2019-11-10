@@ -29,6 +29,9 @@ if totalSpawn > 0 then {
 					} else if kamikazeSpawn > 0 then {
 						spawn.object = objKamikaze
 						kamikazeSpawn--
+					} else if gunnerSpawn > 0 then {
+						spawn.object = objGunner
+						gunnerSpawn--
 					}
 				}
 			}

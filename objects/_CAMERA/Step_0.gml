@@ -1,7 +1,7 @@
 if instance_exists(objPlayer) then {
 	
 	if _WAVEMANAGER.radiusX <= cameraW2 - 32 then {
-		cameraTargetX = room_width/2 - cameraW2
+		cameraTargetX = room_width/2 - cameraW2 + 8
 		cameraLookX = false
 	} else {		
 		cameraTargetX = objPlayer.x - cameraW2
@@ -10,7 +10,7 @@ if instance_exists(objPlayer) then {
 	
 	
 	if _WAVEMANAGER.radiusY <= cameraH2 - 32 then {
-		cameraTargetY = room_height/2 - cameraH2
+		cameraTargetY = room_height/2 - cameraH2 - 8
 		cameraLookY = false
 	} else {				
 		cameraTargetY = objPlayer.y - cameraH2
@@ -36,10 +36,10 @@ if instance_exists(objPlayer) then {
 	if cameraUpdateBounds then {
 		cameraUpdateBounds = false
 		
-		cameraMinX = _WAVEMANAGER.leftX - 64
-		cameraMaxX = _WAVEMANAGER.rightX + 64 - cameraW
-		cameraMinY = _WAVEMANAGER.topY - 64
-		cameraMaxY = _WAVEMANAGER.bottomY + 64 - cameraH
+		cameraMinX = _WAVEMANAGER.leftX - 64 + 8
+		cameraMaxX = _WAVEMANAGER.rightX + 64 - cameraW + 8
+		cameraMinY = _WAVEMANAGER.topY - 64 - 8
+		cameraMaxY = _WAVEMANAGER.bottomY + 64 - cameraH - 8
 		
 		if _WAVEMANAGER.rightX - _WAVEMANAGER.leftX + 96 < cameraW then {
 			cameraMinX = -room_width
