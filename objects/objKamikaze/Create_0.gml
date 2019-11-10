@@ -18,3 +18,5 @@ dir = 90 * irandom_range(0,3)
 t = 0
 
 scoreBase = 1
+
+gunSprite = -1

@@ -15,3 +15,6 @@ vel = 0.8 * computeSpeedMult()
 dir = 90 * irandom_range(0,3)
 
 scoreBase = 1
+
+drawGunOffsetX = 3
+drawGunOffsetY = -6

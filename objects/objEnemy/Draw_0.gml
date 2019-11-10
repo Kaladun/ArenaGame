@@ -12,7 +12,8 @@ if state = 1 and stateTimer <= fireTimer then {
 	attackWarning = 0	
 }
 
-image_blend = col
+//image_blend = col
 
-draw_self()
+drawEnemy()
+
 shader_reset()

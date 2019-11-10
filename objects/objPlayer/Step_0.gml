@@ -9,16 +9,7 @@ if not isDead {
 		moveOffScreen()
 		
 		dir = inputDirection()
-		if dir <= 90 then {
-			drawGunAngle = dir / 2
-			image_xscale = 1
-		} else if dir <= 270 then {
-			drawGunAngle = (dir - 180) / 2
-			image_xscale = -1
-		} else {
-			drawGunAngle = (dir - 360) / 2
-			image_xscale = 1
-		} 
+		computeGunAngle(dir)
 		
 	// BULLET
 

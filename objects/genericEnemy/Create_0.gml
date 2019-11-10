@@ -29,3 +29,8 @@ inExplosion = false
 
 slowTimer = 0
 scoreBase = 1
+
+drawGunOffsetX = 3
+drawGunOffsetY = -8
+drawGunAngle = 0
+gunSprite = sprEnemyBasicGun

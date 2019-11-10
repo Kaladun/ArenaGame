@@ -8,13 +8,13 @@ if stateTimer <= 0 then {
 		stateTimer = 60
 	} else if state = 1 then {
 		audioPlayPitch(sfxEnemyShoot, 0.5, 0.1)
-		enemyFireBullet(image_angle)
+		enemyFireBullet(dir)
 		screenShake(2)
 		
 		state = 0	
 		stateTimer = irandom_range(stateTimerMin, stateTimerMax)
 		dir = aiBasicDirection()
-		image_angle = dir
+		computeGunAngle(dir)
 	}
 }
 
@@ -23,7 +23,8 @@ if state = 0 then {
 	moveOffScreen()
 } else if state = 1 then {
 	if stateTimer > fireTimer then {
-		image_angle = point_direction(x,y,objPlayer.x,objPlayer.y)
+		dir = point_direction(x,y,objPlayer.x,objPlayer.y)
+		computeGunAngle(dir)
 	}
 }
 
