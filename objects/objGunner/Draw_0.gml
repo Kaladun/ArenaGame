@@ -12,7 +12,10 @@ if gunTimer <= fireTimer then {
 	attackWarning = 0	
 }
 
-image_blend = col
+//image_blend = col
 
-draw_self()
+drawEnemy()
+
 shader_reset()
+
+

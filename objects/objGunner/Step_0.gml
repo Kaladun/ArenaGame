@@ -9,6 +9,7 @@ if stateTimer <= 0 then {
 
 aiMoveBasic()
 moveOffScreen()
+computeGunAngle(point_direction(x,y,targetX,targetY))
 
 targetX = objPlayer.x
 targetY = objPlayer.y
@@ -26,6 +27,6 @@ if gunTimer <= 0 then {
 	}	
 }
 
-image_angle = point_direction(x,y,targetX,targetY)
+
 x = clamp(x,6,room_width-6)
 y = clamp(y,6,room_height-6)

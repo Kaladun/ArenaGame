@@ -887,6 +887,14 @@
             }
         },
         {
+            "Key": "72e126ed-2564-49e4-ad5c-ec96abb9c155",
+            "Value": {
+                "id": "3d49e0b5-0728-4c4f-a4b7-45d58070e2b3",
+                "resourcePath": "sprites\\sprDebrisBloodSplots\\sprDebrisBloodSplots.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "740f28b6-b700-4c80-88a5-fb1c2ad6a745",
             "Value": {
                 "id": "9a810bc4-abea-4c44-913d-b1d513625ff9",
@@ -1322,7 +1330,7 @@
             "Key": "b52dae71-00b2-403f-afda-2cd6eb760075",
             "Value": {
                 "id": "4a146cce-7623-4ba9-85a5-eda2a1edade1",
-                "resourcePath": "sprites\\sprDebrisBlood\\sprDebrisBlood.yy",
+                "resourcePath": "sprites\\sprDebrisBloodChunks\\sprDebrisBloodChunks.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1476,6 +1484,14 @@
                 "id": "418a8ba8-e651-42c9-8ad7-ad8d242cce68",
                 "resourcePath": "scripts\\bulletSpeedInc\\bulletSpeedInc.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "cf71a0f6-c9cb-424c-8223-d6f514ae4336",
+            "Value": {
+                "id": "7d3a08b7-d3a3-4d56-9d3f-229697fb228f",
+                "resourcePath": "sprites\\sprEnemyHeavyGun\\sprEnemyHeavyGun.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

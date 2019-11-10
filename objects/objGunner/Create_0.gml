@@ -26,3 +26,8 @@ vel = 0.5 * computeSpeedMult()
 dir = 90 * irandom_range(0,3)
 
 scoreBase = 1
+
+
+gunSprite = sprEnemyHeavyGun
+drawGunOffsetX = 3
+drawGunOffsetY = -7
