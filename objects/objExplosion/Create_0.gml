@@ -6,8 +6,8 @@ timer = 36
 blastTime = 24
 radius = 20 * image_xscale
 
-enemyDamage = 3
-playerDamage = 1
+enemyDamage = 5
+playerDamage = 2
 
 screenShake(12)
 sleep(6)

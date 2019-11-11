@@ -1,6 +1,6 @@
 event_inherited()
 
-hp = 5
+hp = 8 + enemyHPScale(0.67,3)
 bulletImmune = true
 
 hurtSFX = sfxEnemyHurt
