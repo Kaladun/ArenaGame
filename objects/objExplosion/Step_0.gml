@@ -10,15 +10,18 @@ if timer = blastTime then {
 		}
 	}
 	
-	with(objPlayer) {
-		if not isDashing then {
-			if point_distance(x,y,other.x,other.y) <= other.radius + sprite_width/2 then {
-				hp -= other.playerDamage
-				hurt = hurtMax
-				screenShake(6)
-				audioPlayPitch(sfxPlayerHurt, 3, 0.1)
-				sleep(10)
-			}
+	if instance_exists(objPlayer) then {
+		if point_distance(x,y,objPlayer.x,objPlayer.y) <= radius + 6 then {
+			hurtPlayer(playerDamage)
+			screenShake(6)
+		}
+	}
+	
+	with(objBuzzsaw) {
+		if point_distance(x,y,other.x,other.y) <= other.radius + 12	then {
+			var d = point_direction(other.x, other.y, x, y)
+			velX += lengthdir_x(18,d)
+			velY += lengthdir_y(18,d)
 		}
 	}
 	

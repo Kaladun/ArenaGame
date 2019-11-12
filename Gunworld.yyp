@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "00d585c8-99c2-4893-bea0-b81a8e487982",
+            "Value": {
+                "id": "8e52a428-7cbd-4e38-a48c-8d5694a23ce5",
+                "resourcePath": "objects\\objBuzzsaw\\objBuzzsaw.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "01495479-4f7f-4b49-b4d6-2700fbc30bec",
             "Value": {
                 "id": "b2b27cdf-739b-422f-a23f-78e3abcbdff1",
@@ -599,6 +607,14 @@
             }
         },
         {
+            "Key": "4317e63f-ee2e-4177-8efc-cadb1aa9de1f",
+            "Value": {
+                "id": "3ffeccd4-3b58-4da6-9f81-aefe4a87e7ae",
+                "resourcePath": "scripts\\hurtPlayer\\hurtPlayer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "436e30d8-fc67-4f4e-a11e-e69a8d77d66f",
             "Value": {
                 "id": "4dd843f6-a7fe-43ad-964a-f85117948b48",
@@ -916,6 +932,14 @@
                 "id": "54b9dd35-e8f2-404a-8adc-14eb57b96503",
                 "resourcePath": "scripts\\comboDamagePenalty\\comboDamagePenalty.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "750f497f-4485-4f89-8578-3dfc7a6968a8",
+            "Value": {
+                "id": "7396ba4b-cc04-44fc-91a5-dd0b236dc423",
+                "resourcePath": "sprites\\sprBuzzsaw\\sprBuzzsaw.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1850,7 +1874,8 @@
         "ca7eed31-64b8-486c-a5e5-b3465d4c5663",
         "0bfeb39b-e195-4375-abb6-074fd4fc2d4f",
         "a51fd324-7a1d-42db-bba9-e6c7bad216be",
-        "1d1008c3-21a2-4b6d-9ab7-a2856ed93c5e"
+        "1d1008c3-21a2-4b6d-9ab7-a2856ed93c5e",
+        "4317e63f-ee2e-4177-8efc-cadb1aa9de1f"
     ],
     "tutorial": ""
 }
