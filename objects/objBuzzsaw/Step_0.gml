@@ -1,15 +1,25 @@
-if place_meeting(x+velX, y, objWall) then {
+effVX = velX
+effVY = velY
+
+if effVX * effVX + effVY * effVY > velS * velS then {
+	var r = (effVX * effVX + effVY * effVY)/velS
+	r = sqrt(r)
+	effVX /= r
+	effVY /= r
+}
+
+if place_meeting(x+effVX, y, objWall) then {
 	velX *= -1
+	effVX *= -1
 }
 
-if place_meeting(x, y+velY, objWall) then {
+if place_meeting(x, y+effVY, objWall) then {
 	velY *= -1
+	effVY *= -1
 }
 
-x += velX
-y += velY
-
-
+x += effVX
+y += effVY
 
 velX *= f
 velY *= f

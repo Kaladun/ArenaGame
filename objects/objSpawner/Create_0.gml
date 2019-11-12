@@ -1,4 +1,4 @@
-timerMax = 120
+timerMax = 125 - 5 * global.waveNumber
 timerHalf = timerMax / 2
 timer = timerMax
 
