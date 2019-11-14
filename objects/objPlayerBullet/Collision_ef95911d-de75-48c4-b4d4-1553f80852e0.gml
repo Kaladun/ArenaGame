@@ -5,6 +5,7 @@ if not ds_list_find_index(hitList, other.id) then {
 		other.hp -= damage
 		other.hurtKnockback = 3
 		other.hurtDirection = direction
+		other.hurtIntensity = 1
 	}
 
 	if not other.projectilePass then {

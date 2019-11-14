@@ -20,6 +20,7 @@ hurtSFX = sfxEnemyHurt
 hurtKnockback = 0
 hurtKBDecel = 0.5
 hurtDirection = 0
+hurtIntensity = 0
 
 dieSleep = 4
 dieShake = 3

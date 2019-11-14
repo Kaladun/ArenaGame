@@ -4,7 +4,7 @@ audio_play_sound(msxRhinoceros, 1, 1)
 
 // DISPLAY SHIT
 
-global.fullscreen = false
+global.fullscreen = true
 global.cameraScale = 4
 
 if not global.fullscreen then {
@@ -50,53 +50,61 @@ enum stat {
 	inc,
 	dec,
 	predict,
+	worth,
 }
 
 n = 0
 
-global.upgrade[n, stat.name] = "Bullet Speed"
+global.upgrade[n, stat.name] = "Bullet Speed"	//0
 global.upgrade[n, stat.cur] = bulletSpeed
 global.upgrade[n, stat.inc] = bulletSpeedInc
 global.upgrade[n, stat.dec] = bulletSpeedDec
 global.upgrade[n, stat.predict] = formulaBulletSpeedMult
+global.upgrade[n, stat.worth] = 1
 n++
 
-global.upgrade[n, stat.name] = "Bullet Size"
+global.upgrade[n, stat.name] = "Bullet Size"	// 1
 global.upgrade[n, stat.cur] = thiccness
 global.upgrade[n, stat.inc] = thiccnessInc
 global.upgrade[n, stat.dec] = thiccnessDec
 global.upgrade[n, stat.predict] = formulaThiccness
+global.upgrade[n, stat.worth] = 1
 n++
 
-global.upgrade[n, stat.name] = "Gun Cooldown"
+global.upgrade[n, stat.name] = "Gun Cooldown"	// 2
 global.upgrade[n, stat.cur] = cooldown
 global.upgrade[n, stat.inc] = cooldownInc
 global.upgrade[n, stat.dec] = cooldownDec
 global.upgrade[n, stat.predict] = formulaCooldownMult
+global.upgrade[n, stat.worth] = 1
 n++
 
-global.upgrade[n, stat.name] = "Bullet Variance"
+global.upgrade[n, stat.name] = "Bullet Variance"	// 3
 global.upgrade[n, stat.cur] = variance
 global.upgrade[n, stat.inc] = varianceInc
 global.upgrade[n, stat.dec] = varianceDec
 global.upgrade[n, stat.predict] = formulaVarianceMult
+global.upgrade[n, stat.worth] = 1
 n++
 
-global.upgrade[n, stat.name] = "Shotgun Odds"
+global.upgrade[n, stat.name] = "Shotgun Odds"	// 4
 global.upgrade[n, stat.cur] = shotgun
 global.upgrade[n, stat.inc] = shotgunInc
 global.upgrade[n, stat.dec] = shotgunDec
 global.upgrade[n, stat.predict] = formulaShotgunOdds
+global.upgrade[n, stat.worth] = 1
 n++
 
-global.upgrade[n, stat.name] = "Vampire Odds"
+global.upgrade[n, stat.name] = "Vampire Odds"	// 5
 global.upgrade[n, stat.cur] = vampireOdds
 global.upgrade[n, stat.inc] = vampireOddsInc
 global.upgrade[n, stat.dec] = vampireOddsDec
 global.upgrade[n, stat.predict] = formulaVampireOdds
+global.upgrade[n, stat.worth] = 5
 n++
 
 global.upgradeTotal = n
+global.moneyPerWorth = 3
 
 
 // START

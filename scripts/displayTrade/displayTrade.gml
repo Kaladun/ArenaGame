@@ -22,7 +22,11 @@ draw_set_color(c_white)
 if iB != -1 then {
 	draw_text(argument1, argument2-8, global.upgrade[iB, stat.name] + " : ")
 }
-draw_text(argument1, argument2, global.upgrade[iA, stat.name] + " : ")
+if iA != -1 then {
+	draw_text(argument1, argument2, global.upgrade[iA, stat.name] + " : ")
+} else {
+	draw_text(argument1, argument2, "Scrap Cost : ")
+}
 draw_text(argument1, argument2+8, global.upgrade[out, stat.name] + " : ")
 
 draw_set_halign(fa_left)
@@ -30,7 +34,11 @@ draw_set_color(c_red)
 if iB != -1 then {
 	draw_text(argument1, argument2-8, string(100 * script_execute(global.upgrade[iB, stat.predict], cB)) + "% -> " + string(100 * script_execute(global.upgrade[iB, stat.predict], cB - qB)) + "%")	
 }
-draw_text(argument1, argument2, string(100 * script_execute(global.upgrade[iA, stat.predict], cA)) + "% -> " + string(100 * script_execute(global.upgrade[iA, stat.predict], cA - qA)) + "%")	
+if iA != -1 then {
+	draw_text(argument1, argument2, string(100 * script_execute(global.upgrade[iA, stat.predict], cA)) + "% -> " + string(100 * script_execute(global.upgrade[iA, stat.predict], cA - qA)) + "%")	
+} else {
+	draw_text(argument1, argument2, "$" + string(qA))	
+}
 draw_set_color(c_lime)
 
 draw_text(argument1, argument2+8, string(100 * script_execute(global.upgrade[out, stat.predict], cO)) + "% -> " + string(100 * script_execute(global.upgrade[out, stat.predict], cO + qO)) + "%")	

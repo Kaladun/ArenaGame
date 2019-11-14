@@ -22,6 +22,7 @@ if instance_number(_SHOP) <= 0 then {
 	}
 
 	if mouse_check_button_pressed(mb_left) then {
-//		instance_create_depth(0,0,0, _SHOP)	
+		instance_create_depth(0,0,-100, _SHOP)	
+		wentShopping = true
 	}
 }

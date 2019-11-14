@@ -6,6 +6,7 @@ if timer = blastTime then {
 			hp -= other.enemyDamage
 			isHurt = true
 			inExplosion = true
+			hurtIntensity = 2
 			screenShake(4)
 		}
 	}

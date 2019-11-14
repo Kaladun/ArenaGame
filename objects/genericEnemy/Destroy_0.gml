@@ -5,4 +5,4 @@ if random(1) < computeVampireOdds() then {
 comboAddKill()
 scoreAddKill(scoreBase)
 
-createBloodSplatter(1)
+createBloodSplatter(hurtIntensity)
