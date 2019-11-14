@@ -22,10 +22,6 @@ with(objEnemyBullet) {
 	draw_self()
 }	
 
-with(objEnemyPellet) {
-	draw_self()
-}	
-
 surface_reset_target()
 draw_surface(bulletSurface,0,0)
 gpu_set_blendmode(bm_normal)
