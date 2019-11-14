@@ -9,4 +9,6 @@ if isHurt then {
 	
 	screenShake(hurtShake)
 	sleep(hurtSleep)
+	
+	createBloodSplatter(0.125)
 }

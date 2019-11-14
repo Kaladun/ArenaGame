@@ -7,9 +7,7 @@ if stateTimer <= 0 then {
 		state = 1
 		stateTimer = 60
 	} else if state = 1 then {
-		audioPlayPitch(sfxEnemyShoot, 0.5, 0.1)
 		enemyFireBullet(dir)
-		screenShake(2)
 		
 		state = 0	
 		stateTimer = irandom_range(stateTimerMin, stateTimerMax)

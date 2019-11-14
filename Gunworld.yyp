@@ -471,6 +471,14 @@
             }
         },
         {
+            "Key": "2b9c0e82-3ccf-4acc-b105-fcd555a225f0",
+            "Value": {
+                "id": "c3770cc1-f561-4e2c-b475-16133810d853",
+                "resourcePath": "objects\\objDebrisEmitter\\objDebrisEmitter.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2ddde817-779f-4748-b151-98988e571205",
             "Value": {
                 "id": "cbcbfbb4-222c-421b-b060-c3541a9922c6",
@@ -807,6 +815,14 @@
             }
         },
         {
+            "Key": "5a300342-7dac-4aa0-bc8f-ee4ce42bf4cc",
+            "Value": {
+                "id": "f4202aac-b845-4fc3-9bb6-db399e9e009b",
+                "resourcePath": "scripts\\createDebrisEmitter\\createDebrisEmitter.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "600c0435-1797-4ee0-802a-1a0bc1feee5f",
             "Value": {
                 "id": "2ff37530-8e28-4fa1-a82d-0989ee00937c",
@@ -876,6 +892,14 @@
                 "id": "b51eac6e-a414-4450-aa69-d9357f58e544",
                 "resourcePath": "objects\\objTextPop\\objTextPop.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "69e59a34-74d5-4d49-a28f-40bd1dd4b140",
+            "Value": {
+                "id": "7031f8c1-d7a7-4681-9861-553a7d7bad9d",
+                "resourcePath": "views\\69e59a34-74d5-4d49-a28f-40bd1dd4b140.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1639,6 +1663,14 @@
             }
         },
         {
+            "Key": "e83ab6d5-b2e2-4dda-aed1-62b0663162a5",
+            "Value": {
+                "id": "1f605cce-6303-4e45-bbdd-780fe72060af",
+                "resourcePath": "sprites\\sprDebrisBloodEmitter\\sprDebrisBloodEmitter.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e96acf4d-eb01-4612-87b1-08f1d53c9b1c",
             "Value": {
                 "id": "fc4c3484-08c0-46f6-ba96-31744c71be6e",
@@ -1866,6 +1898,7 @@
         "fd38cc85-c9bc-499d-bd46-2e31bbbc9949",
         "4f7df07e-024b-47fb-83e8-9434b3c037af",
         "a7eb7166-b6a0-41bf-8c0f-3f17e6cfc4db",
+        "5a300342-7dac-4aa0-bc8f-ee4ce42bf4cc",
         "f02b3890-eb2b-422c-b049-04c4edb41f5a",
         "46e92625-f01f-4b56-840e-ddf7807a89b9",
         "744bcf86-ee43-4ea7-8135-8a56b10261cc",
