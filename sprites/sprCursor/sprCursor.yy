@@ -2,7 +2,7 @@
     "id": "36e9916c-2baa-4108-88e8-3a575b18a2db",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sCursor",
+    "name": "sprCursor",
     "For3D": false,
     "HTile": false,
     "VTile": false,

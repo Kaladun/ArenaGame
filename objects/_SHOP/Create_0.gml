@@ -1,12 +1,24 @@
-heartCost = floor(3 + floor(global.waveNumber/2))
-heartType = irandom_range(0,3)
+heartType = choose(-1,-1,irandom_range(0,4))
+
+if heartType = -1 then {
+	heartCost = floor(4 + global.waveNumber)
+} else {
+	heartCost = floor(1 + global.waveNumber/3)	
+}
 
 trades = 0
 
+canHealTrade = true
+
 repeat(3) {
 	generateTrade(trades)
+	canTrade[trades] = true
 	trades++
 }
 
-gx = display_get_gui_width() / global.cameraScale
-gy = display_get_gui_height() / global.cameraScale
+gx = display_get_gui_width() / global.cameraScale / 2
+gy = display_get_gui_height() / global.cameraScale / 2
+
+gw = 80
+ghu = -10
+ghd = 22

@@ -10,14 +10,12 @@
         "ced65fff-c789-46f6-ba21-77ed57ade713",
         "c604fd2b-8df9-4e0e-875a-0c2f6250e6d0",
         "6c5594b8-2ef8-4f14-8f41-cf93941e8553",
-        "777e3d6f-c14e-41df-afe7-59dd552682cf",
-        "6ff5f4c0-870b-42ef-b709-8e36aaa26309",
-        "25cfc4df-c2e8-443a-aeec-eaf224278e79",
-        "7a166d4c-4d86-46df-8206-747ee4e6619c",
-        "b5d57020-8fd8-43cd-a99b-c07eedf24278"
+        "43c3e070-5900-4449-878c-03b9bd01136b",
+        "7e1d6244-bb9a-4662-b328-41ebe7009e6e",
+        "e87eba56-f378-403e-b152-0e824b7acbed"
     ],
     "filterType": "GMScript",
-    "folderName": "Utility",
+    "folderName": "Utility & Math",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
