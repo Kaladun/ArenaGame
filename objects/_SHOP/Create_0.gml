@@ -13,11 +13,16 @@ canHealTrade = true
 repeat(3) {
 	generateTrade(trades)
 	canTrade[trades] = true
+	
+	if trade[trades, shop.inputA] = -1 and trade[trades, shop.quantA] > global.money then {
+		canTrade[trades] = false	
+	}
+	
 	trades++
 }
 
 gx = display_get_gui_width() / global.cameraScale / 2
-gy = display_get_gui_height() / global.cameraScale / 2
+gy = display_get_gui_height() / global.cameraScale * 0.4 
 
 gw = 80
 ghu = -10

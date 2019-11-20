@@ -15,9 +15,7 @@ if instance_number(_SHOP) <= 0 then {
 	draw_text(gx/2, gy*0.9+15, "CLICK [LMB] TO UPGRADE")
 
 	if keyboard_check_pressed(vk_space) then {
-		global.waveNumber++
-	
-		_WAVEMANAGER.waveStartNew = true
+		startNewWave()
 		instance_destroy()
 	}
 

@@ -2,9 +2,11 @@ var clicked = mouse_check_button_pressed(mb_left)
 gmx = guiMouseX()
 gmy = guiMouseY()
 
-draw_sprite(sprCursor,0,gmx,gmy)
 
+
+displayTradeBox(canHealTrade, gx - gw, gy - 40 + ghu, gx + gw, gy - 40 + ghd) 
 displayHealTrade(heartType, heartCost, gx, gy - 40)
+
 if clicked and canHealTrade and point_in_rectangle(gmx, gmy, gx - gw, gy - 40 + ghu, gx + gw, gy - 40 + ghd) then {
 	executeHealTrade(heartType, heartCost)
 }	
@@ -18,7 +20,9 @@ else {draw_set_color(c_red)}
 draw_rectangle(gx - gw, gy - 40 + ghu, gx + gw, gy - 40 + ghd, true)
 	
 
+
 for(var i = 0; i < trades; i++) {
+	displayTradeBox(canTrade[i], gx - gw, gy + i * 40 + ghu, gx + gw, gy + i * 40 + ghd) 
 	displayTrade(i, gx, gy + 40 * i)
 	if clicked and canTrade[i] and point_in_rectangle(gmx, gmy, gx - gw, gy + i * 40 + ghu, gx + gw, gy + i * 40 + ghd) then {
 		executeTrade(i)
@@ -30,4 +34,19 @@ for(var i = 0; i < trades; i++) {
 	draw_rectangle(gx - gw, gy + i * 40 + ghu, gx + gw, gy + i * 40 + ghd, true)
 }
 
+
+endMouseOver = point_in_rectangle(gmx, gmy, gx-50, 220, gx+50, 240)
+displayTradeBox(endMouseOver, gx-50, 220, gx+50, 240)
 draw_set_color(c_white)
+draw_set_halign(fa_center)
+draw_text(gx, 225, "CONTINUE THE SLAUGHTER")
+if clicked and endMouseOver then {
+	startNewWave()
+	with(_WAVETRANSITION) {
+		instance_destroy()	
+	}
+	instance_destroy()
+}
+
+
+draw_sprite(sprCursor,0,gmx,gmy)

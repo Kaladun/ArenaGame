@@ -1,6 +1,7 @@
 var iA = argument0
 var qA = argument1
 
+
 if iA != -1 then {
 	cA = script_execute(global.upgrade[iA, stat.cur])		
 }

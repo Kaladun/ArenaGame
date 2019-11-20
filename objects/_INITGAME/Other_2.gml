@@ -5,7 +5,7 @@ audio_play_sound(msxRhinoceros, 1, 1)
 // DISPLAY SHIT
 
 global.fullscreen = false
-global.cameraScale = 2
+global.cameraScale = 3
 
 if not global.fullscreen then {
 
