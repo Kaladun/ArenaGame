@@ -5,7 +5,7 @@ if hurtTimer > 0 then {
 
 var col = c_base
 if fireTimer <= fireTimerMax then {
-	var sst = smoothstep(fireTimer/fireTimerMax)
+	sst = smoothstep(fireTimer/fireTimerMax)
 	var col = merge_color(c_white, c_base, sst)
 	attackWarning = 1 - sst
 } else {

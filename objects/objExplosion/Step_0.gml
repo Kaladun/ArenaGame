@@ -7,6 +7,8 @@ if timer = blastTime then {
 			isHurt = true
 			inExplosion = true
 			hurtIntensity = 2
+			hurtDirection = point_direction(other.x,other.y,x,y)
+			hurtKnockback = 2
 			screenShake(4)
 		}
 	}

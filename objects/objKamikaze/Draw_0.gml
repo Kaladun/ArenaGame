@@ -1,1 +1,1 @@
-drawEnemy()
+drawEnemy(0)

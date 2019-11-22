@@ -1871,6 +1871,14 @@
             }
         },
         {
+            "Key": "fcedc91b-5af8-479d-a310-a55c3b279815",
+            "Value": {
+                "id": "baf842cb-d503-4835-b475-70e7d540ea2b",
+                "resourcePath": "shaders\\sdrWhiteLevel\\sdrWhiteLevel.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "fd38cc85-c9bc-499d-bd46-2e31bbbc9949",
             "Value": {
                 "id": "be2ff7fe-ffaa-44b5-b154-251f58bb9578",

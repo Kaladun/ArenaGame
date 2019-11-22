@@ -17,9 +17,15 @@ if stateTimer <= 0 then {
 }
 
 if state = 0 then {
-	aiMoveBasic()
-	moveOffScreen()
-} else if state = 1 then {
+	aiVelMult = 1
+} else {
+	aiVelMult = 0
+}
+
+aiMoveBasic()
+moveOffScreen()
+
+if state = 1 then {
 	if stateTimer > fireTimer then {
 		dir = point_direction(x,y,objPlayer.x,objPlayer.y)
 		computeGunAngle(dir)

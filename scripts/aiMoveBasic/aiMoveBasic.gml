@@ -7,4 +7,6 @@ if hurtKnockback > 0 then {
 	hurtKnockback = max(hurtKnockback - hurtKBDecel, 0)
 }	
 
-moveBasic(dx,dy)
+if dx != 0 or dy != 0 then {
+	moveBasic(dx,dy)
+}

@@ -15,6 +15,6 @@ if hp <= 0 then {
 	screenShake(dieShake)
 }
 
-currentVel = vel * computeVelocity(slowTimer) 
+currentVel = vel * aiVelMult * computeVelocity(slowTimer) 
 
 depth = -y

@@ -5,11 +5,12 @@ if hurtTimer > 0 then {
 
 var col = c_ltgray
 if state = 1 and stateTimer <= fireTimer then {
-	var sst = smoothstep(stateTimer/fireTimer)
+	sst = smoothstep(stateTimer/fireTimer)
 	col = merge_color(c_white, c_ltgray, sst)
 	attackWarning = 1 - sst
 } else {
-	attackWarning = 0	
+	attackWarning = 0
+	sst = 0
 }
 
 image_blend = col

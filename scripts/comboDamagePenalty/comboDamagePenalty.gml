@@ -1,6 +1,10 @@
-global.comboLevel--
-global.comboTimer = global.comboTimerMax
+if global.comboLevel > 1 then {
+	global.comboLevel--
+	global.comboTimer = global.comboTimerMax
 
-comboRecalculate()
+	comboRecalculate()
 
-global.comboKills = clamp(global.comboKills, 0, global.comboGoal - 1)
+	global.comboKills = clamp(global.comboKills, 0, global.comboGoal - 1)
+} else {
+	global.comboKills = 0	
+}

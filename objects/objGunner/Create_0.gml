@@ -30,4 +30,4 @@ scoreBase = 1
 
 gunSprite = sprEnemyHeavyGun
 drawGunOffsetX = 3
-drawGunOffsetY = -7
+drawGunOffsetY = -8

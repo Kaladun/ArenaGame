@@ -5,16 +5,17 @@ if hurtTimer > 0 then {
 
 var col = c_yellow
 if gunTimer <= fireTimer then {
-	var sst = smoothstep(gunTimer/fireTimer)
+	sst = smoothstep(gunTimer/fireTimer)
 	col = merge_color(c_white, col, sst)
 	attackWarning = 1 - sst
 } else {
 	attackWarning = 0	
+	sst = 0
 }
 
 //image_blend = col
 
-drawEnemy()
+drawEnemy(attackWarning)
 
 shader_reset()
 
