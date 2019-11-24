@@ -12,12 +12,12 @@ if stateTimer <= 0 then {
 		state = 1
 		stateTimer = 60
 	} else if state = 1 then {
-		armoredFireBullet(image_angle, 35)
+		armoredFireBullet(dir, 35)
 		
 		state = 0	
 		stateTimer = irandom_range(stateTimerMin, stateTimerMax)
 		dir = aiBasicDirection()
-		image_angle = dir
+		computeGunAngle(dir)
 	}
 }
 
@@ -32,7 +32,8 @@ moveOffScreen()
 
 if state = 1 then {
 	if stateTimer > fireTimer then {
-		image_angle = point_direction(x,y,objPlayer.x,objPlayer.y)
+		dir = point_direction(x,y,objPlayer.x,objPlayer.y)
+		computeGunAngle(dir)
 	}
 }
 

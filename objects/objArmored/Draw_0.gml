@@ -1,23 +1,28 @@
 if hurtTimer > 0 then {
-	hurtTimer --
+	hurtTimer--
 	shader_set(sdrWhite)
 }
 
-var col = c_ltgray
+var col = c_red
 if state = 1 and stateTimer <= fireTimer then {
 	sst = smoothstep(stateTimer/fireTimer)
-	col = merge_color(c_white, c_ltgray, sst)
+	col = merge_color(c_white, col, sst)
 	attackWarning = 1 - sst
 } else {
-	attackWarning = 0
-	sst = 0
+	attackWarning = 0	
 }
 
-image_blend = col
+//image_blend = col
 
-draw_self()
 if hasArmor then {
-	draw_sprite_ext(sprite_index, 1, x, y, image_xscale, image_yscale, image_angle, -1, 1)
+	draw_sprite_ext(sprArmoredShield, 0, x - image_xscale, y-1, image_xscale, 1, 0, c_black, 1)
+	draw_sprite_ext(sprArmoredShield, 0, x - image_xscale, y+1, image_xscale, 1, 0, c_black, 1)
+}
+
+drawEnemy(attackWarning)
+
+if hasArmor then {
+	draw_sprite_ext(sprArmoredShield, 0, x, y, image_xscale, 1, 0, -1, 1)
 }
 
 shader_reset()

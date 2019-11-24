@@ -415,6 +415,14 @@
             }
         },
         {
+            "Key": "255138bc-eae8-4b5b-bb69-6fe34d691916",
+            "Value": {
+                "id": "5da290c2-51bd-4779-8e20-7fa8ef61a416",
+                "resourcePath": "sprites\\sprArmoredShield\\sprArmoredShield.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "256ac911-ab66-4f7e-9184-c07135f16ab7",
             "Value": {
                 "id": "e42bb29c-bbf0-4b28-bd16-4e4a89093e4f",
@@ -483,14 +491,6 @@
             "Value": {
                 "id": "28ec68c8-3bdd-4303-acf5-60021ec50fcc",
                 "resourcePath": "sprites\\sprWoodTopTiles\\sprWoodTopTiles.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "2b6084c8-42cf-4ba6-9d57-9a5b82f2cd09",
-            "Value": {
-                "id": "d3c59d65-a928-467f-9c03-8a1f923a971a",
-                "resourcePath": "sprites\\sprArmored\\sprArmored.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -804,6 +804,14 @@
                 "id": "f3b71caf-3717-4f02-9873-f76e55482387",
                 "resourcePath": "scripts\\wallUpdateNeighbors\\wallUpdateNeighbors.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "51ae1153-0896-4fed-a0f9-f3eca280331f",
+            "Value": {
+                "id": "a8035999-7084-4447-b7ff-1228113e7859",
+                "resourcePath": "sprites\\sprArmored\\sprArmored.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1220,6 +1228,14 @@
                 "id": "e2946765-59f8-4ce6-ae17-af84eeff57af",
                 "resourcePath": "scripts\\comboRecalculate\\comboRecalculate.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8aa96a34-cf7e-433b-99a9-614a036977de",
+            "Value": {
+                "id": "b36c5f51-7d21-4d4b-a295-04fa167bee3f",
+                "resourcePath": "sprites\\sprArmoredShotgun\\sprArmoredShotgun.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

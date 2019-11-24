@@ -21,3 +21,7 @@ hasArmor = true
 
 image_speed = 0
 scoreBase = 3
+
+drawGunOffsetX = 3
+drawGunOffsetY = -7
+gunSprite = sprArmoredShotgun
