@@ -12,7 +12,7 @@ if isDashing then {
 	}
 } else if hurt <= 0 and not isDead then {
 	sleep(10)
-	hp--
+	hp -= other.damage
 
 	//randomTaunt()
 	audioPlayPitch(sfxPlayerHurt, 2, 0.1)

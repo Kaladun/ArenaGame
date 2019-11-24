@@ -32,6 +32,10 @@ if totalSpawn > 0 then {
 					} else if gunnerSpawn > 0 then {
 						spawn.object = objGunner
 						gunnerSpawn--
+					} else if random(1) < 0.2 then {
+						spawn.object = objShotgunner
+					} else if random(1) < 0.25 then {
+						spawn.object = objSniper	
 					}
 				}
 			}

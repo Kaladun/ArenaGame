@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "0245ebab-f46d-4a3f-8ed8-2ffcadaa284e",
+            "Value": {
+                "id": "2c1c31f7-9eaa-419d-a628-a245f3022b52",
+                "resourcePath": "sprites\\sprEnemySniperRifle\\sprEnemySniperRifle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "02e19df6-fb29-4d85-8f30-628e6a2c4ae4",
             "Value": {
                 "id": "54c93f15-17ad-4fd4-abd1-0c50490e5a5d",
@@ -535,6 +543,14 @@
             }
         },
         {
+            "Key": "36269b07-f054-478f-a293-52f7d3561605",
+            "Value": {
+                "id": "94afe702-845e-4435-a507-b1e5910205f7",
+                "resourcePath": "sprites\\sprEnemyShotgun\\sprEnemyShotgun.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3634fecf-1baa-4ba3-a67d-6d938be4d103",
             "Value": {
                 "id": "11c3be04-fd5d-4f00-bf96-828def339dc5",
@@ -631,6 +647,14 @@
             }
         },
         {
+            "Key": "42d0b732-8d98-41f1-8c2d-c053aa55d6a7",
+            "Value": {
+                "id": "94333e7b-107a-42ef-b4c4-0ecb77a68b49",
+                "resourcePath": "objects\\objEnemySniperRound\\objEnemySniperRound.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4317e63f-ee2e-4177-8efc-cadb1aa9de1f",
             "Value": {
                 "id": "3ffeccd4-3b58-4da6-9f81-aefe4a87e7ae",
@@ -684,6 +708,14 @@
                 "id": "2f2bc9fb-f516-4de8-bd7b-b5fd257d5e70",
                 "resourcePath": "scripts\\comboAddKill\\comboAddKill.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "470147e6-fe43-44c1-84da-3abf40ed7a9b",
+            "Value": {
+                "id": "8147a03b-fbc6-44d6-924d-5a11a6965519",
+                "resourcePath": "sprites\\sprEnemySniper\\sprEnemySniper.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -863,6 +895,14 @@
             }
         },
         {
+            "Key": "63235366-8726-4dea-8d8a-edc771a8a7de",
+            "Value": {
+                "id": "234b9f0c-b25b-48ac-b682-49fb75f0943c",
+                "resourcePath": "scripts\\shotgunnerFireBullet\\shotgunnerFireBullet.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "639124ad-34de-4dd3-9433-bf63621a84e4",
             "Value": {
                 "id": "5dfdb714-f471-4892-bcd4-adf2dab45668",
@@ -947,6 +987,14 @@
             "Value": {
                 "id": "cff023fe-02ed-40e9-a7c8-c030b9cd7e8e",
                 "resourcePath": "scripts\\pm\\pm.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6fe9156c-8f2d-497c-81de-ba51c2e58173",
+            "Value": {
+                "id": "077de121-f28e-4fee-9bcd-1087ba729ea2",
+                "resourcePath": "scripts\\predictLeadTime\\predictLeadTime.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1215,6 +1263,14 @@
             }
         },
         {
+            "Key": "8e4702a0-b0bb-4aab-bfbb-7fd448ae71a9",
+            "Value": {
+                "id": "38035a32-eb15-4175-8895-8be5d93055ae",
+                "resourcePath": "objects\\objSniper\\objSniper.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8f08b6be-0713-4c3c-9697-07b5bb7f084c",
             "Value": {
                 "id": "3ad343fa-7d69-48e5-bd53-d8df4fd22e83",
@@ -1316,6 +1372,14 @@
                 "id": "712dd826-a641-49c7-a101-cfe201e9d1fb",
                 "resourcePath": "scripts\\computeSpeedMult\\computeSpeedMult.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9fd534e9-fd71-4608-8a2a-5e05d8f18aaf",
+            "Value": {
+                "id": "9bc73a27-dc95-4c96-a29b-9b386b5fad75",
+                "resourcePath": "sprites\\sprEnemyShotgunner\\sprEnemyShotgunner.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1583,6 +1647,14 @@
             }
         },
         {
+            "Key": "ceacb95b-c9f2-4f3f-b44e-bc98357969ce",
+            "Value": {
+                "id": "6ca8cc68-690e-4920-9342-b0b66d1013a9",
+                "resourcePath": "sprites\\sprEnemySniperBullet\\sprEnemySniperBullet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ced65fff-c789-46f6-ba21-77ed57ade713",
             "Value": {
                 "id": "27863da0-18b9-4cb8-922d-3981ca2811f0",
@@ -1684,6 +1756,14 @@
                 "id": "5942adfa-b100-422b-9c15-24ba0745b3c3",
                 "resourcePath": "sprites\\sprBackground\\sprBackground.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e1877486-79c3-4b55-9628-a0cde7b9a3b7",
+            "Value": {
+                "id": "563bacec-9ab9-4710-b773-f00dc9f9a4d3",
+                "resourcePath": "objects\\objShotgunner\\objShotgunner.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1855,6 +1935,14 @@
             }
         },
         {
+            "Key": "f72f8a00-8920-43f1-853b-6a1d8889f6d3",
+            "Value": {
+                "id": "c99dd1d5-c279-4667-976a-23382b714739",
+                "resourcePath": "scripts\\sniperFireBullet\\sniperFireBullet.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f747c819-91e7-4619-95df-0b7b748ac66d",
             "Value": {
                 "id": "f494a5e3-80ac-44fc-940f-1a93e2b54e5b",
@@ -1908,6 +1996,8 @@
         "12987302-7bd1-463d-bcfe-2a0f64626de0",
         "3f5b7ce5-3cef-433c-8a11-d9fe965a48b0",
         "258010a4-020e-45a1-9a9e-381431b969a7",
+        "f72f8a00-8920-43f1-853b-6a1d8889f6d3",
+        "63235366-8726-4dea-8d8a-edc771a8a7de",
         "4d5ad1db-f1e4-4a9a-b99f-8079d08f3c0d",
         "25bdd914-1659-492e-86fc-20c427a39a87",
         "b07a5033-89e6-45d1-b58d-6ac7bbc5b63f",
@@ -1995,7 +2085,8 @@
         "73ae5905-caea-4890-884e-9092d78b099b",
         "0f66bf4f-bf75-4512-ba91-8363481ff6b4",
         "256ac911-ab66-4f7e-9184-c07135f16ab7",
-        "8c36b88f-3c88-4756-837d-8ea562960d44"
+        "8c36b88f-3c88-4756-837d-8ea562960d44",
+        "6fe9156c-8f2d-497c-81de-ba51c2e58173"
     ],
     "tutorial": ""
 }

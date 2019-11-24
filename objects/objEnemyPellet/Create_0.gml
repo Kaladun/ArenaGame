@@ -11,3 +11,5 @@ image_yscale = image_xscale
 bounceTotal = 1
 
 createFlash(2)
+
+damage = 1
