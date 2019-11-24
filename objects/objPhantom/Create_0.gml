@@ -21,10 +21,11 @@ burstTimerBonus = 240
 
 vel = 0.55 * computeSpeedMult()
 dir = irandom_range(0,3) * 90
-image_angle = dir
 
 t = 0 
-image_alpha = 0.5
-c_base = merge_color(c_white, c_purple, 0.5)
-
 scoreBase = 3
+
+gunDir = 0
+gunSprite = sprPhantomGun
+drawGunOffsetX = 3
+drawGunOffsetY = -6

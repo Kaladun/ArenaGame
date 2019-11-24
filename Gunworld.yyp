@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "0ea8be47-4610-4410-a150-68a7e76f50d5",
+            "Value": {
+                "id": "7dcce60f-23b6-4bf9-881b-c57ae42a4c02",
+                "resourcePath": "sprites\\sprPhantomGun\\sprPhantomGun.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0f66bf4f-bf75-4512-ba91-8363481ff6b4",
             "Value": {
                 "id": "3adc5e9c-8460-480f-b9c2-5e6721b1f050",
@@ -500,6 +508,22 @@
                 "id": "c3770cc1-f561-4e2c-b475-16133810d853",
                 "resourcePath": "objects\\objDebrisEmitter\\objDebrisEmitter.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2bc12594-3acc-4b86-8fce-5e0f2e1fd6c5",
+            "Value": {
+                "id": "891ec7ad-5374-41d5-9dbc-58825d8b3894",
+                "resourcePath": "sprites\\sprDitherMask\\sprDitherMask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2c1f5e4f-30ba-4bb1-a012-ec54328c001e",
+            "Value": {
+                "id": "94cffd24-70a1-429e-8258-79ffb9d9c8d2",
+                "resourcePath": "shaders\\sdrDeleteFuchsia\\sdrDeleteFuchsia.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -1591,6 +1615,14 @@
             }
         },
         {
+            "Key": "c07ed132-96af-4f38-ba6f-b21707fcd959",
+            "Value": {
+                "id": "83a2429c-605b-4136-9811-431fff9ab5b7",
+                "resourcePath": "scripts\\drawInvisibleEnemy\\drawInvisibleEnemy.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c3700c96-d322-4da4-bdcc-138038990242",
             "Value": {
                 "id": "416511ac-ba33-4f4c-b87e-992f1d5e78d3",
@@ -2085,6 +2117,7 @@
         "977ae1b1-1faf-4a60-a7a8-1ed96ecf2eaa",
         "0bfeb39b-e195-4375-abb6-074fd4fc2d4f",
         "a51fd324-7a1d-42db-bba9-e6c7bad216be",
+        "c07ed132-96af-4f38-ba6f-b21707fcd959",
         "1d1008c3-21a2-4b6d-9ab7-a2856ed93c5e",
         "4317e63f-ee2e-4177-8efc-cadb1aa9de1f",
         "25cfc4df-c2e8-443a-aeec-eaf224278e79",
