@@ -10,4 +10,3 @@ timer = timerMax
 
 speedMax = random_range(2.0,4.0)
 speed = speedMax
-direction = random_range(0,360)

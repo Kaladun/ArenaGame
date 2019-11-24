@@ -33,7 +33,7 @@ if state = 1 then {
 		var pdy = objPlayer.dy
 		var pv = objPlayer.vel
 		
-		gunLeadT = predictLeadTime(px, py, pdx * pv, pdy * pv, x, y, 4.0 * computeBulletSpeedMult())
+		gunLeadT = predictLeadTime(px, py, pdx * pv, pdy * pv, x, y, 4 * (1 + (computeBulletSpeedMult() - 1) * 0.7))
 		
 		if gunLeadT < 0 then {
 			dir = point_direction(x,y,px,py)

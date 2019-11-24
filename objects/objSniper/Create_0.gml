@@ -9,7 +9,7 @@ state = 0
 stateTimerMin = 90
 stateTimerMax = 120
 stateTimer = irandom_range(stateTimerMin, stateTimerMax)
-fireTimer = 60
+fireTimer = 30
 
 vel = 0.8 * computeSpeedMult()
 dir = 90 * irandom_range(0,3)

@@ -1,4 +1,4 @@
-speed = 4 * computeBulletSpeedMult()
+speed = 4 * (1 + (computeBulletSpeedMult() - 1) * 0.7)
 image_speed = 0
 
 image_xscale = computeThiccness()

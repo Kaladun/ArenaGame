@@ -1,1 +1,1 @@
-return power(0.96, argument0)
+return 1 + 0.05 * argument0//power(0.96, argument0)

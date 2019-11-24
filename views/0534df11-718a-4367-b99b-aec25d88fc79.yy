@@ -4,17 +4,17 @@
     "mvc": "1.1",
     "name": "0534df11-718a-4367-b99b-aec25d88fc79",
     "children": [
+        "6fe9156c-8f2d-497c-81de-ba51c2e58173",
+        "22ab5923-cf9d-4508-b768-dd78e01e4c81",
         "3f5b7ce5-3cef-433c-8a11-d9fe965a48b0",
-        "258010a4-020e-45a1-9a9e-381431b969a7",
-        "f72f8a00-8920-43f1-853b-6a1d8889f6d3",
-        "63235366-8726-4dea-8d8a-edc771a8a7de",
-        "4d5ad1db-f1e4-4a9a-b99f-8079d08f3c0d",
-        "25bdd914-1659-492e-86fc-20c427a39a87",
-        "b07a5033-89e6-45d1-b58d-6ac7bbc5b63f",
-        "22ab5923-cf9d-4508-b768-dd78e01e4c81"
+        "1d1008c3-21a2-4b6d-9ab7-a2856ed93c5e",
+        "a51fd324-7a1d-42db-bba9-e6c7bad216be",
+        "c07ed132-96af-4f38-ba6f-b21707fcd959",
+        "037102a6-b285-4552-b335-ee41e82b8be4",
+        "b2a638a0-9623-4b4d-b7d8-72047a3a5605"
     ],
     "filterType": "GMScript",
-    "folderName": "Enemy AI",
+    "folderName": "Enemy Functions",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

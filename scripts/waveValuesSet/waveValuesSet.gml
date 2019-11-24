@@ -3,7 +3,7 @@ waveBase = 2 * global.waveNumber + 1
 _ENEMYSPAWNER.totalSpawn = waveBase + 3 * global.burstNumber
 _ENEMYSPAWNER.gunnerSpawn = 0
 _ENEMYSPAWNER.armoredSpawn = 0
-_ENEMYSPAWNER.phantomSpawn = 1
+_ENEMYSPAWNER.phantomSpawn = 0
 _ENEMYSPAWNER.kamikazeSpawn = 0
 
 var specialSpawn = ceil(global.waveNumber/2) - 2 + global.burstNumber

@@ -71,7 +71,7 @@ global.upgrade[n, stat.predict] = formulaThiccness
 global.upgrade[n, stat.worth] = 1
 n++
 
-global.upgrade[n, stat.name] = "Gun Cooldown"	// 2
+global.upgrade[n, stat.name] = "Fire Rate"	// 2
 global.upgrade[n, stat.cur] = cooldown
 global.upgrade[n, stat.inc] = cooldownInc
 global.upgrade[n, stat.dec] = cooldownDec

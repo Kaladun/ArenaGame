@@ -14,7 +14,7 @@ if not isDead {
 	// BULLET
 
 		if (bulletCooldown <= 0 and _INPUT.shoot) or (bulletQueue and bulletCooldown <= ceil(bulletCooldownSpam * computeCooldownMult() )) {
-			bulletCooldown = ceil(bulletCooldownMax * computeCooldownMult())
+			bulletCooldown += bulletCooldownMax / computeCooldownMult()
 			bulletQueue = false
 			
 			playerFireBullet(objPlayerBullet, dir)
