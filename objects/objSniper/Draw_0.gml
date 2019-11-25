@@ -17,3 +17,7 @@ if state = 1 and stateTimer <= fireTimer then {
 drawEnemy(attackWarning)
 
 shader_reset()
+
+/*if targetX != -1 and targetY != -1 then {
+	draw_sprite_ext(sprCursor, 0, targetX, targetY, 1, 1, 0, c_red, 1)	
+}*/

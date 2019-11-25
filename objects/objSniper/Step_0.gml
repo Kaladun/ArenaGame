@@ -33,15 +33,22 @@ if state = 1 then {
 		var pdy = objPlayer.dy
 		var pv = objPlayer.vel
 		
-		gunLeadT = predictLeadTime(px, py, pdx * pv, pdy * pv, x, y, 4 * (1 + (computeBulletSpeedMult() - 1) * 0.7))
+		gunLeadT = predictLeadTime(px, py, pdx * pv, pdy * pv, x, y, 3.2 * (1 + (computeBulletSpeedMult() - 1) * 0.7))
 		
 		if gunLeadT < 0 then {
+			targetX = px 
+			targetY = py
 			dir = point_direction(x,y,px,py)
 		} else {
+			targetX = px + pdx * pv * (gunLeadT + gunLastT)
+			targetY = py + pdy * pv * (gunLeadT + gunLastT)
 			dir = point_direction(x,y,px + pdx * pv * (gunLeadT + gunLastT), py + pdy * pv * (gunLeadT + gunLastT))	
 		}
 		computeGunAngle(dir)
-	}
+	} 
+} else {
+	targetX = -1
+	targetY = -1
 }
 
 x = clamp(x,6,room_width-6)

@@ -1,6 +1,6 @@
 event_inherited()
 
-hp = 4 + enemyHPScale(0.6, 2)
+hp = 3 + enemyHPScale(0.6, 2)
 
 
 // BEHAVIOR CONTROL
@@ -22,3 +22,6 @@ gunSprite = sprEnemySniperRifle
 
 gunLeadT = 0
 gunLastT = 10
+
+targetX = -1
+targetY = -1
