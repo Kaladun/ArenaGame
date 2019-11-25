@@ -1,10 +1,7 @@
 global.waveNumber = 0
 global.burstNumber = 0
 
-instance_create_depth(0,0,0,_ENEMYSPAWNER)
-waveValuesSet()
-
-waveBurstMax = 3
+waveBurstMax = 2
 
 block = 16
 buffer = block * 1
@@ -20,5 +17,6 @@ radiusY = radiusBaseY
 
 waveFinished = false
 waveStartNew = true
-waveFirst = true
+burstStartNew = false
 
+waveFirst = true

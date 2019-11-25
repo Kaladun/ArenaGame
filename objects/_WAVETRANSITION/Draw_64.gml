@@ -9,7 +9,7 @@ if instance_number(_SHOP) <= 0 then {
 	draw_set_halign(fa_center)
 	t++
 	var angle = 5*sin(t*0.02)
-	draw_text_transformed(gx/2, gy*0.3, "WAVE " + string(global.waveNumber+1) + " COMPLETE!", 4, 4, angle)
+	draw_text_transformed(gx/2, gy*0.3, "WAVE " + string(global.waveNumber) + " COMPLETE!", 4, 4, angle)
 
 	draw_text(gx/2, gy*0.9, "PUSH [SPACE] TO CONTINUE")
 	draw_text(gx/2, gy*0.9+15, "CLICK [LMB] TO UPGRADE")

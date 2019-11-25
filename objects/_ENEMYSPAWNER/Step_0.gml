@@ -3,7 +3,7 @@ if totalSpawn > 0 then {
 
 	if t <= 0 then {
 		totalSpawn--
-		t = min(tMax - global.waveNumber,10)
+		t = min(tMax - 3*global.waveNumber,10)
 	
 		spawn = noone
 		
@@ -41,4 +41,6 @@ if totalSpawn > 0 then {
 			}
 		} until spawn != noone
 	}
+} else {
+	instance_destroy()	
 }

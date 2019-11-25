@@ -1,16 +1,3 @@
-if _ENEMYSPAWNER.totalSpawn = 0 and not waveFinished and not waveStartNew then {
-	if instance_number(genericEnemy) = 0 and instance_number(objSpawner) = 0 then {	
-		if global.burstNumber + 1 >= waveBurstMax then {
-			global.burstNumber = -1
-			waveFinished = true
-			instance_create_depth(0,0,0, _WAVETRANSITION)
-		} else {
-			global.burstNumber++
-			waveValuesSet()	
-		}
-	}
-}
-
 if waveStartNew then {
 	
 	/*with(objWall) {
@@ -136,4 +123,31 @@ if waveStartNew then {
 	waveFirst = false
 	waveStartNew = false
 	waveFinished = false
+	
+	burstStartNew = true
+	
+} else if burstStartNew then {
+
+	instance_create_depth(0,0,0,_ENEMYSPAWNER)
+	burstStartNew = false
+	
+} else if not instance_exists(_ENEMYSPAWNER) and not waveFinished and not waveStartNew then {
+	if instance_number(genericEnemy) = 0 and instance_number(objSpawner) = 0 then {	
+		
+		if global.burstNumber < waveBurstMax then {
+			burstStartNew = true
+			waveStartNew = false
+			global.burstNumber++
+		} else {
+			waveFinished = true	
+			
+			burstStartNew = false
+			waveStartNew = false
+			
+			global.burstNumber = 0
+			global.waveNumber++
+			
+			instance_create_depth(0,0,0,_WAVETRANSITION)
+		}
+	}
 }
