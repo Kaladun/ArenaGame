@@ -17,10 +17,10 @@ if instance_exists(objPlayer) then {
 		cameraLookY = true
 	}*/
 	
-cameraTargetX = objPlayer.x - cameraW2
-cameraLookX = true	
-cameraTargetY = objPlayer.y - cameraH2
-cameraLookY = true	
+	cameraTargetX = objPlayer.x - cameraW2
+	cameraLookX = true	
+	cameraTargetY = objPlayer.y - cameraH2
+	cameraLookY = true	
 	
 	if global.gamepad then {
 		mag = point_distance(0, 0, _INPUT.lx, _INPUT.ly) 
@@ -75,4 +75,10 @@ if global.screenShakeTotal > 0 then {
 	global.screenShakeTotal -= max(1, ceil(global.screenShakeTotal * 0.1))
 }
 
+if roundTest then {
+camera_set_view_pos(view_camera[0], round(cameraX), round(cameraY)) 
+} else {
 camera_set_view_pos(view_camera[0], cameraX, cameraY)
+}
+
+if keyboard_check_pressed(ord("R")) then {roundTest = (roundTest + 1) mod 2}
