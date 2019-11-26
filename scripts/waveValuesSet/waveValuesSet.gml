@@ -4,7 +4,7 @@ _ENEMYSPAWNER.totalSpawn = waveBase + 3 * global.burstNumber
 _ENEMYSPAWNER.gunnerSpawn = 0
 _ENEMYSPAWNER.armoredSpawn = 0
 _ENEMYSPAWNER.phantomSpawn = 0
-_ENEMYSPAWNER.bomberSpawn = 1
+_ENEMYSPAWNER.bomberSpawn = 0
 
 var specialSpawn = max(0, ceil(global.waveNumber/2) - 2 + global.burstNumber)
 _ENEMYSPAWNER.basicSpawn = _ENEMYSPAWNER.totalSpawn - specialSpawn
