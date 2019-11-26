@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "3255888e-e358-468c-9243-3360f93a0810",
+            "Value": {
+                "id": "158dc953-022e-4207-a8d0-900c1efe10e2",
+                "resourcePath": "scripts\\bomberFireGrenade\\bomberFireGrenade.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "32c15379-de4f-4bf4-9c41-faff9e65ecc9",
             "Value": {
                 "id": "2b213335-2f2d-4080-84fe-6dfa6287af46",
@@ -724,6 +732,14 @@
                 "id": "b1d0f193-f89b-49ae-8f00-b982ccedc0b0",
                 "resourcePath": "scripts\\bulletSpeedDec\\bulletSpeedDec.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "45316813-8451-48b2-ab40-96d9dae0274e",
+            "Value": {
+                "id": "c8ca46d2-6d8c-47b9-8cad-3513306f53b1",
+                "resourcePath": "objects\\objEnemyGrenade\\objEnemyGrenade.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -915,6 +931,14 @@
             "Value": {
                 "id": "f4202aac-b845-4fc3-9bb6-db399e9e009b",
                 "resourcePath": "scripts\\createDebrisEmitter\\createDebrisEmitter.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5aea296b-6018-4138-aad2-d7f458b0238c",
+            "Value": {
+                "id": "e17348f5-ba11-44d2-bf97-6038a4bf141b",
+                "resourcePath": "scripts\\grenadeVtoD\\grenadeVtoD.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1271,6 +1295,22 @@
             }
         },
         {
+            "Key": "88135a88-0d48-4d60-b941-672e7175fe92",
+            "Value": {
+                "id": "be6df512-bbdf-4e8d-8d65-2a6d73d358ba",
+                "resourcePath": "objects\\objBomber\\objBomber.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "881c0b13-84ab-43a2-8be1-0155964f063c",
+            "Value": {
+                "id": "eead8b34-ca59-4416-ad8e-ff3bb20bb3d3",
+                "resourcePath": "sprites\\sprEnemyGrenadeLauncher\\sprEnemyGrenadeLauncher.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8aa96a34-cf7e-433b-99a9-614a036977de",
             "Value": {
                 "id": "b36c5f51-7d21-4d4b-a295-04fa167bee3f",
@@ -1383,6 +1423,14 @@
             }
         },
         {
+            "Key": "997aef9c-8ee0-478a-a4b2-4446168d2cac",
+            "Value": {
+                "id": "b3bfb4e6-c19f-4d32-96ed-40d2bb387859",
+                "resourcePath": "sprites\\sprBomber\\sprBomber.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9a6b2f31-50e0-48ab-824a-00bc5225ded9",
             "Value": {
                 "id": "d6cea25d-fc6f-40b8-bd11-c918656df8a6",
@@ -1444,6 +1492,14 @@
                 "id": "69003f82-7257-4ace-980a-bba57c1e4590",
                 "resourcePath": "sprites\\sprShell\\sprShell.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a11d7df6-5435-4efb-93b6-db84bb138bb1",
+            "Value": {
+                "id": "8aa1fe95-d6fa-4c81-99a8-a4a1b782ce6f",
+                "resourcePath": "scripts\\grenadeDtoV\\grenadeDtoV.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1935,6 +1991,14 @@
             }
         },
         {
+            "Key": "edb9edac-fbe4-4c6f-84fd-b6faea56b873",
+            "Value": {
+                "id": "50bf682f-5e8b-4332-aac3-cbe61e630399",
+                "resourcePath": "sprites\\sprEnemyGrenade\\sprEnemyGrenade.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f02b3890-eb2b-422c-b049-04c4edb41f5a",
             "Value": {
                 "id": "ee9230b9-c8dc-4821-b515-2fee855bbd29",
@@ -2088,6 +2152,7 @@
         "25bdd914-1659-492e-86fc-20c427a39a87",
         "63235366-8726-4dea-8d8a-edc771a8a7de",
         "4d5ad1db-f1e4-4a9a-b99f-8079d08f3c0d",
+        "3255888e-e358-468c-9243-3360f93a0810",
         "4f7df07e-024b-47fb-83e8-9434b3c037af",
         "f180f1f6-c07b-47c8-90b1-e2a71b2b8b74",
         "600c0435-1797-4ee0-802a-1a0bc1feee5f",
@@ -2127,11 +2192,11 @@
         "52b45c2d-41c9-4e2c-a78d-eb3464ff9132",
         "e4ade101-4535-4aa6-8cd3-7bda4cce0163",
         "e24fa0bb-6adc-4089-8ee0-23364f4ea185",
+        "9eda593a-e088-4c2c-ad55-a76f4879ee19",
         "1d6645f1-cd57-41d4-a652-d2fe742b74a3",
         "93895032-860a-4c54-a007-8bc351d9cda2",
         "1d48e2c4-575b-450d-a85e-b9f63651e85d",
         "d6936382-3610-465d-8cc3-c6f637ae22b6",
-        "9eda593a-e088-4c2c-ad55-a76f4879ee19",
         "7ad2dc02-66b4-4fac-abe6-c0da9a44f41d",
         "00d21c81-ab7f-4706-9f96-a8089e78b916",
         "3634fecf-1baa-4ba3-a67d-6d938be4d103",
@@ -2167,7 +2232,9 @@
         "0f66bf4f-bf75-4512-ba91-8363481ff6b4",
         "256ac911-ab66-4f7e-9184-c07135f16ab7",
         "977ae1b1-1faf-4a60-a7a8-1ed96ecf2eaa",
-        "501691f2-1301-4ddc-8f2e-5ed814794e20"
+        "501691f2-1301-4ddc-8f2e-5ed814794e20",
+        "5aea296b-6018-4138-aad2-d7f458b0238c",
+        "a11d7df6-5435-4efb-93b6-db84bb138bb1"
     ],
     "tutorial": ""
 }

@@ -1,3 +1,3 @@
-if not other.grenadeImmune then {
+if not other.projectilePass then {
 	instance_destroy()
 }

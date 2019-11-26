@@ -38,7 +38,7 @@ if not isDead {
 		if grenadeCount > 0 then {
 			if _INPUT.grenadeDown then {
 				grenadeVel = clamp(grenadeVel + grenadeAccel, 0, grenadeVelMax)
-				grenadePredict = (grenadeVel * grenadeVel) / (0.4) + grenadeVel / 2		
+				grenadePredict = grenadeVtoD(grenadeVel)
 		
 			} else if _INPUT.grenadeReleased then {		
 				var grenade = instance_create_depth(x,y,-50,objGrenade)	

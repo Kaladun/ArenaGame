@@ -4,6 +4,7 @@ _ENEMYSPAWNER.totalSpawn = waveBase + 3 * global.burstNumber
 _ENEMYSPAWNER.gunnerSpawn = 0
 _ENEMYSPAWNER.armoredSpawn = 0
 _ENEMYSPAWNER.phantomSpawn = 0
+_ENEMYSPAWNER.bomberSpawn = 1
 
 var specialSpawn = max(0, ceil(global.waveNumber/2) - 2 + global.burstNumber)
 _ENEMYSPAWNER.basicSpawn = _ENEMYSPAWNER.totalSpawn - specialSpawn
@@ -18,7 +19,7 @@ _ENEMYSPAWNER.basicSpawn -= _ENEMYSPAWNER.skilledSpawn
 //createTextPop(300,300,"SPAWN:"+string(specialSpawn))
 
 while(specialSpawn > 0) {
-	r = irandom_range(0,2)
+	r = irandom_range(0,3)
 	
 	if r = 0 then {
 		_ENEMYSPAWNER.armoredSpawn += 1
@@ -26,6 +27,8 @@ while(specialSpawn > 0) {
 		_ENEMYSPAWNER.phantomSpawn += 1	
 	} else if r = 2 then {
 		_ENEMYSPAWNER.gunnerSpawn += 1
+	} else if r = 3 then {
+		_ENEMYSPAWNER.bomberSpawn += 1
 	}	
 //_ENEMYSPAWNER.phantomSpawn = 0//specialSpawn - _ENEMYSPAWNER.armoredSpawn
 

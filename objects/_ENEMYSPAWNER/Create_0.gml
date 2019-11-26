@@ -8,6 +8,7 @@ skilledSpawn = 0
 armoredSpawn = 0
 phantomSpawn = 0
 gunnerSpawn = 0
+bomberSpawn = 0
 
 waveValuesSet()
 
@@ -23,6 +24,10 @@ repeat(phantomSpawn) {
 
 repeat(gunnerSpawn) {
 	ds_list_add(spawnList, objGunner)	
+}
+
+repeat(bomberSpawn) {
+	ds_list_add(spawnList, objBomber)	
 }
 
 repeat(basicSpawn) {

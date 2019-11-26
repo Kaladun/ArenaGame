@@ -9,7 +9,8 @@
         "b07a5033-89e6-45d1-b58d-6ac7bbc5b63f",
         "25bdd914-1659-492e-86fc-20c427a39a87",
         "63235366-8726-4dea-8d8a-edc771a8a7de",
-        "4d5ad1db-f1e4-4a9a-b99f-8079d08f3c0d"
+        "4d5ad1db-f1e4-4a9a-b99f-8079d08f3c0d",
+        "3255888e-e358-468c-9243-3360f93a0810"
     ],
     "filterType": "GMScript",
     "folderName": "Fire Scripts",

@@ -1,0 +1,1 @@
+return 2.5 * argument0 * argument0 + 0.5 * argument0 
