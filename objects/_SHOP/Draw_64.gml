@@ -1,8 +1,17 @@
-var clicked = mouse_check_button_pressed(mb_left)
+var clicked = mouse_check_button_pressed(mb_left) and not skipFirstFrame
 gmx = guiMouseX()
 gmy = guiMouseY()
 
 
+if canHealTrade and heartType = -1 then {
+	if global.money < heartCost	then {canHealTrade = false}
+}
+
+for(var i = 0; i < trades; i++) {
+	if canTrade[i] and trade[i, shop.inputA] = -1 then {
+		if global.money < trade[i, shop.quantA] then {canTrade[i] = false}	
+	}
+}
 
 displayTradeBox(canHealTrade, gx - gw, gy - 40 + ghu, gx + gw, gy - 40 + ghd) 
 displayHealTrade(heartType, heartCost, gx, gy - 40)
@@ -50,3 +59,4 @@ if clicked and endMouseOver then {
 
 
 draw_sprite(sprCursor,0,gmx,gmy)
+skipFirstFrame = false

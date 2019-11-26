@@ -27,3 +27,5 @@ gy = display_get_gui_height() / global.cameraScale * 0.4
 gw = 80
 ghu = -10
 ghd = 22
+
+skipFirstFrame = true
