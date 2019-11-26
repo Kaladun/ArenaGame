@@ -1,1 +1,1 @@
-return sqrt(argument0)
+return sqrt(max(0,argument0))

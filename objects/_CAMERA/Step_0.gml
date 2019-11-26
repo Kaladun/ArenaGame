@@ -1,6 +1,6 @@
 if instance_exists(objPlayer) then {
 	
-	if _WAVEMANAGER.radiusX <= cameraW2 - 32 then {
+/*	if _WAVEMANAGER.radiusX <= cameraW2 - 32 then {
 		cameraTargetX = room_width/2 - cameraW2 + 8
 		cameraLookX = false
 	} else {		
@@ -15,8 +15,12 @@ if instance_exists(objPlayer) then {
 	} else {				
 		cameraTargetY = objPlayer.y - cameraH2
 		cameraLookY = true
-	}
+	}*/
 	
+cameraTargetX = objPlayer.x - cameraW2
+cameraLookX = true	
+cameraTargetY = objPlayer.y - cameraH2
+cameraLookY = true	
 	
 	if global.gamepad then {
 		mag = point_distance(0, 0, _INPUT.lx, _INPUT.ly) 
@@ -40,16 +44,6 @@ if instance_exists(objPlayer) then {
 		cameraMaxX = _WAVEMANAGER.rightX + 64 - cameraW + 8
 		cameraMinY = _WAVEMANAGER.topY - 64 - 8
 		cameraMaxY = _WAVEMANAGER.bottomY + 64 - cameraH - 8
-		
-		if _WAVEMANAGER.rightX - _WAVEMANAGER.leftX + 96 < cameraW then {
-			cameraMinX = -room_width
-			cameraMaxX = room_width
-		}
-		
-		if _WAVEMANAGER.bottomY - _WAVEMANAGER.topY + 96 < cameraH then {
-			cameraMinY = -room_height
-			cameraMaxY = room_height
-		}
 	}
 
 	cameraTargetX = clamp(cameraTargetX, cameraMinX, cameraMaxX)

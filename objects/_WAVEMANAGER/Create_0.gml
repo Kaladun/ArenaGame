@@ -9,11 +9,16 @@ buffer = block * 1
 centerX = room_width / 2 
 centerY = room_height / 2
 
-radiusBaseX = 8
+radiusBaseX = 9
 radiusBaseY = 6
 
-radiusX = radiusBaseX
-radiusY = radiusBaseY
+radiusX = radiusBaseX * block
+radiusY = radiusBaseY * block
+
+leftX = (centerX - radiusX)
+rightX = (centerX + radiusX)
+topY = (centerY - radiusY)
+bottomY = (centerY + radiusY)
 
 waveFinished = false
 waveStartNew = true

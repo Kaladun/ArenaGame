@@ -2,10 +2,10 @@ if debug then {
 	draw_set_color(c_ltgray)
 	draw_set_halign(fa_left)
 	
-	draw_text(debugX, debugY, "BSP: "+string(global.bulletSpeedBase)+" / "+string(100*computeBulletSpeedMult()) + "%")
-	draw_text(debugX, debugY+10, "CLD: "+string(global.bulletCooldownBase)+" / "+string(100*computeCooldownMult())+ "%")
-	draw_text(debugX, debugY+20, "SGO: "+string(global.bulletShotgunBase)+" / "+string(100*computeShotgunOdds(1))+ "%")
-	draw_text(debugX, debugY+30, "FAT: "+string(global.bulletThiccBase)+" / "+string(100*computeThiccness())+ "%")
+	draw_text(debugX, debugY, "SPEED: "+string(global.bulletSpeedBase)+" / "+string(100*computeBulletSpeedMult()) + "%")
+	draw_text(debugX, debugY+10, "COOL: "+string(global.bulletCooldownBase)+" / "+string(100*computeCooldownMult())+ "%")
+	draw_text(debugX, debugY+20, "SHOTGUN: "+string(global.bulletShotgunBase)+" / "+string(100*computeShotgunOdds(1))+ "%")
+	draw_text(debugX, debugY+30, "SIZE: "+string(global.bulletThiccBase)+" / "+string(100*computeThiccness())+ "%")
 	draw_text(debugX, debugY+40, "VAR: "+string(global.bulletVarianceBase)+" / "+string(100*computeVarianceMult())+ "%")
 	
 }
