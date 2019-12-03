@@ -1,1 +1,0 @@
-draw_text(10,250,roundTest)

@@ -11,7 +11,7 @@ trade[n, shop.quantO] = -1
 // INPUTS
 
 if random(1) > 0.5 then {
-	var wmax = 2 + 3*global.waveNumber
+	var wmax = 3 + global.waveNumber
 
 	do {
 		var ti = irandom_range(0,4)	

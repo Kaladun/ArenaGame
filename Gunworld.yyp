@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "09d52479-dc32-4a16-9d72-d38c5c7ebfe6",
+            "Value": {
+                "id": "22e6ac0e-c5b9-4923-97e9-0f52a6a09098",
+                "resourcePath": "sprites\\sprEnemyBullet\\sprEnemyBullet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0ac11cc6-849b-48d9-a47d-6ccc3fefd002",
             "Value": {
                 "id": "b89ce730-0707-4fdd-a70f-86e559e26827",
@@ -1335,14 +1343,6 @@
             }
         },
         {
-            "Key": "8ca2aeac-3873-4a88-97cf-cc4487122dd6",
-            "Value": {
-                "id": "267ecf8c-33c8-4f7a-9398-ee067f67bc14",
-                "resourcePath": "sprites\\sprEnemyBullet\\sprEnemyBullet.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "8ca50185-9862-43db-b021-95efe3121a71",
             "Value": {
                 "id": "e499cedd-92f2-4b57-9312-50b4484f1b2a",
@@ -1996,6 +1996,14 @@
                 "id": "50bf682f-5e8b-4332-aac3-cbe61e630399",
                 "resourcePath": "sprites\\sprEnemyGrenade\\sprEnemyGrenade.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ef99f852-5b5e-4e3a-952b-575fdff2b5e1",
+            "Value": {
+                "id": "17d5cbfa-a0cf-4d16-ae8c-bce0eb6ed00c",
+                "resourcePath": "objects\\_DEBUG\\_DEBUG.yy",
+                "resourceType": "GMObject"
             }
         },
         {

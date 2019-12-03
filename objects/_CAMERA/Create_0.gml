@@ -37,5 +37,3 @@ view_hport[0] = cameraH
 
 view_visible[0] = true
 view_enabled = true
-
-roundTest = false

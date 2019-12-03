@@ -1,4 +1,3 @@
-image_index = 1
 image_angle = direction
 
 if projectileBounce() then {

@@ -4,7 +4,7 @@ audio_play_sound(msxRhinoceros, 1, 1)
 
 // DISPLAY SHIT
 
-global.fullscreen = false
+global.fullscreen = true
 global.cameraScale = 4
 
 if not global.fullscreen then {
@@ -110,4 +110,3 @@ global.moneyPerWorth = 3
 // START
 
 room_goto(roomArena)
-
