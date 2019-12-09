@@ -38,3 +38,5 @@ isDashing = false
 drawGunOffsetX = -4
 drawGunOffsetY = -6
 drawGunAngle = 0
+
+imageSpeedInit()

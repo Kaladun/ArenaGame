@@ -18,3 +18,4 @@ if hp <= 0 then {
 currentVel = vel * aiVelMult * computeVelocity(slowTimer) 
 
 depth = -y
+imageSpeedUpdate()

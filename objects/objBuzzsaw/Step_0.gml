@@ -18,8 +18,8 @@ if place_meeting(x, y+effVY, objWall) then {
 	effVY *= -1
 }
 
-x += effVX
-y += effVY
+x += effVX * global.timeWarp
+y += effVY * global.timeWarp
 
 velX *= f
 velY *= f
@@ -32,4 +32,4 @@ if abs(velY) < threshold then {
 	velY = 0	
 }
 
-image_angle += dr
+image_angle += dr * global.timeWarp

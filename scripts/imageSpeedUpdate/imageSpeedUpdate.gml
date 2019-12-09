@@ -1,0 +1,1 @@
+image_speed = imageSpeedDefault * global.timeWarp

@@ -3,7 +3,9 @@ image_speed = 0
 image_index = 1
 
 speed = 0
-speedMax = 0.2
+
+trueSpeed = 1
+trueSpeedMax = 1
 speedDecel = 0.2
 
 heightMax = 16

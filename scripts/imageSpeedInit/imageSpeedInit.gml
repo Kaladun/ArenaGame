@@ -1,0 +1,1 @@
+imageSpeedDefault = image_speed

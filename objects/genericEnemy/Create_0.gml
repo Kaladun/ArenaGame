@@ -38,3 +38,5 @@ drawGunAngle = 0
 gunSprite = sprEnemyBasicGun
 
 sst = 0
+
+imageSpeedInit()

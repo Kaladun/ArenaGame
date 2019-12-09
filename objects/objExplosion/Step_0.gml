@@ -45,3 +45,5 @@ if timer <= blastTime and not blast then {
 if timer <= 0 then {
 	instance_destroy()	
 }
+
+imageSpeedUpdate()

@@ -47,10 +47,8 @@ if not isDead {
 				grenadePredict = grenadeVtoD(grenadeVel)
 		
 			} else if _INPUT.grenadeReleased then {		
-				var grenade = instance_create_depth(x,y,-50,objGrenade)	
-				grenade.direction = dir + random_range(-2,2) + random_range(-2,2)
-				grenade.speed = grenadeVel
-				grenade.speedMax = grenadeVel
+				var d = dir + random_range(-2,2) + random_range(-2,2)
+				fireGrenade(x,y,d,grenadeVel, objGrenade)
 				
 				grenadeCount--	
 				grenadeVel = 0
@@ -114,4 +112,4 @@ if not isDead {
 	}	
 }
 
-
+imageSpeedUpdate()

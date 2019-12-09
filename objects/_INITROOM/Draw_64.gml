@@ -2,8 +2,8 @@ draw_set_color(c_aqua)
 draw_text(40,200,global.timeWarp)
 
 oldTW = global.timeWarp
-global.timeWarp += (mouse_wheel_up() - mouse_wheel_down()) * 0.1
-global.timeWarp = clamp(global.timeWarp, 0.2, 2)
+global.timeWarp += (mouse_wheel_up() - mouse_wheel_down()) * 0.2
+global.timeWarp = clamp(global.timeWarp, 0.2, 1.6)
 
 deltaTW = global.timeWarp - oldTW
 

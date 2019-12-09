@@ -18,3 +18,5 @@ depth = -2000
 
 blast = false
 scorch = false
+
+imageSpeedInit()
