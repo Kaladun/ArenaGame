@@ -1,4 +1,4 @@
-timer--
+timer -= global.timeWarp
 
 if timer > timerHalf then {
 	s = timer - timerHalf 

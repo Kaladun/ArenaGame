@@ -1,4 +1,4 @@
-speed = 2.5 * computeBulletSpeedMult()
+speedMax = 2.5 * computeBulletSpeedMult()
 image_speed = 0
 image_index = global.bulletEnemyFrame
 

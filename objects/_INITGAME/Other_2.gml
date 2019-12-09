@@ -1,6 +1,8 @@
 randomize()
 
-audio_play_sound(msxRhinoceros, 1, 1)
+global.activeMusic = audio_play_sound(msxRhinoceros, 1, 1)
+
+
 
 // DISPLAY SHIT
 

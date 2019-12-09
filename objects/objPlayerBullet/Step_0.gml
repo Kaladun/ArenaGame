@@ -1,4 +1,5 @@
 image_angle = direction
+speed = speedMax * global.timeWarp
 
 if projectileBounce() then {
 	if bounceTotal <= 0 then {

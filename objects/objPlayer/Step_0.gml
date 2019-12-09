@@ -4,8 +4,14 @@ if not isDead {
 	// MOVE
 		inputMove()
 
-		vel = baseVel * computeSpeedMult()
-		moveBasic(dx * vel, dy * vel)
+		vel = baseVel * computeSpeedMult() 
+		var tx = dx * vel + bulletKickX
+		var ty = dy * vel + bulletKickY
+		
+		bulletKickX = 0
+		bulletKickY = 0
+		
+		moveBasic(tx, ty)
 		moveOffScreen()
 		
 		dir = inputDirection()
@@ -26,8 +32,8 @@ if not isDead {
 			audioPlayPitch(sfxPlayerShoot, 1, 0.1)
 			screenShake(3)
 			
-			x += lengthdir_x(bulletKick, dir)
-			y += lengthdir_y(bulletKick, dir)
+			bulletKickX += lengthdir_x(bulletKick, dir)
+			bulletKickY += lengthdir_y(bulletKick, dir)
 			
 		} else if _INPUT.shootPressed {
 			bulletQueue = true
@@ -37,7 +43,7 @@ if not isDead {
 		
 		if grenadeCount > 0 then {
 			if _INPUT.grenadeDown then {
-				grenadeVel = clamp(grenadeVel + grenadeAccel, 0, grenadeVelMax)
+				grenadeVel = clamp(grenadeVel + grenadeAccel * global.timeWarp, 0, grenadeVelMax)
 				grenadePredict = grenadeVtoD(grenadeVel)
 		
 			} else if _INPUT.grenadeReleased then {		
@@ -71,14 +77,14 @@ if not isDead {
 		}
 	} else {
 		ds = smoothstep(dashTimer/dashTimerMax)
-		dashVel = lerp(dashMinVel, dashMaxVel, ds) * computeSpeedMult()
+		dashVel = lerp(dashMinVel, dashMaxVel, ds) * computeSpeedMult() * global.timeWarp
 		
 		image_xscale = lerp(1,1.2,ds)
 		image_yscale = lerp(1,0.9,ds)
 		
 		moveDash(lengthdir_x(dashVel, dashDir), lengthdir_y(dashVel, dashDir))
 		
-		dashTimer--
+		dashTimer -= global.timeWarp
 		if dashTimer <= 0 then {
 			isDashing = false	
 		}
@@ -87,7 +93,7 @@ if not isDead {
 
 	
 	if bulletCooldown > 0 then {
-		bulletCooldown--	
+		bulletCooldown -= global.timeWarp	
 	}
 	
 	x = clamp(x,6,room_width-6)

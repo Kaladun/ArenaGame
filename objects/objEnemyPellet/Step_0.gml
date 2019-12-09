@@ -1,11 +1,11 @@
 image_angle = direction
 
-t--
+t -= global.timeWarp
 if t <= 0 then {
 	instance_destroy()
 }
 
-speed = lerp(0,speedMax,t/tMax)
+speed = lerp(0,speedMax,t/tMax) * global.timeWarp
 
 if projectileBounce() then {
 	bounceTotal--

@@ -1,6 +1,6 @@
 event_inherited()
 
-fireTimer--
+fireTimer -= global.timeWarp
 
 aiMoveBasic()
 moveOffScreen()

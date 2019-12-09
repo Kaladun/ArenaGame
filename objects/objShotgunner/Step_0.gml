@@ -1,6 +1,6 @@
 event_inherited()
 
-stateTimer--
+stateTimer -= global.timeWarp
 
 if stateTimer <= 0 then {
 	if state = 0 then {

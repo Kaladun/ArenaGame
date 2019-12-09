@@ -29,10 +29,10 @@ x = clamp(x,6,room_width-6)
 y = clamp(y,6,room_height-6)
 
 if t > 0 then {
-	t--
+	t -= global.timeWarp
 }	
 
 if chaseDelay > 0 then {
-	chaseDelay--	
+	chaseDelay -= global.timeWarp
 }
 		

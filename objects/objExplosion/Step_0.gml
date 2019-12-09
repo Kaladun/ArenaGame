@@ -1,6 +1,7 @@
-timer--
+timer -= global.timeWarp
 
-if timer = blastTime then {
+if timer <= blastTime and not blast then {
+	blast = true
 	with(genericEnemy) {
 		if point_distance(x,y,other.x,other.y) <= other.radius + sprite_width/2 and not grenadeImmune then {
 			hp -= other.enemyDamage

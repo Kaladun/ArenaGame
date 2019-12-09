@@ -14,6 +14,9 @@ bulletCooldownSpam = 3
 bulletQueue = false
 bulletKick = -2
 
+bulletKickX = 0
+bulletKickY = 0
+
 grenadeCountMax = 5
 grenadeCount = grenadeCountMax
 

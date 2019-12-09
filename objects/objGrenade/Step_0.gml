@@ -1,6 +1,7 @@
 if speed > 0 then {
-	speed = clamp(speed - speedDecel, 0, 10)	
-	image_angle += da
+	trueSpeed = trueSpeed - speedDecel * global.timeWarp
+	speed = clamp(speed - speedDecel * global.timeWarp, 0, 10)
+	image_angle += da * global.timeWarp
 	da *= 0.95
 	
 	sm = speed / speedMax

@@ -1,5 +1,5 @@
-var tx = x + argument0
-var ty = y + argument1
+var tx = x + argument0 * global.timeWarp
+var ty = y + argument1 * global.timeWarp
 	
 var goX = true
 var goY = true

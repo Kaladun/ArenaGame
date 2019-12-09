@@ -5,7 +5,7 @@ if inExplosion then {
 	bulletImmune = false
 }
 
-stateTimer--
+stateTimer -= global.timeWarp
 
 if stateTimer <= 0 then {
 	if state = 0 then {

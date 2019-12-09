@@ -15,3 +15,6 @@ sleep(6)
 audioPlayPitch(sfxExplosion, 1, 0.1)
 
 depth = -2000
+
+blast = false
+scorch = false
