@@ -6,7 +6,8 @@ hpMax = 5
 hp = 5
 
 hurt = 0
-hurtMax = 60
+hurtMax = 120
+hurtNow = false
 
 bulletCooldown = 0
 bulletCooldownMax = 20

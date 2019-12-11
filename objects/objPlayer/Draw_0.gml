@@ -18,7 +18,7 @@ if grenadePredict > 0 then {
 }		
 
 if hurt > 0 then {
-	if hurt % 6 >= 3 then {
+	if hurt % 10 >= 5 then {
 		shader_set(sdrWhite)
 	}
 		
@@ -26,10 +26,6 @@ if hurt > 0 then {
 		
 	shader_reset()
 	hurt--
-	
-	if hurt <= 0 then {
-		room_speed = 60		
-	}
 } else {
 	drawPlayer()
 }

@@ -104,12 +104,7 @@ if not isDead {
 		audioPlay(sfxDie, 5)
 	}
 	
-	
 	depth = -y
-	
-	if hurt = hurtMax - 1 then {
-		comboDamagePenalty()
-	}	
 }
 
 imageSpeedUpdate()

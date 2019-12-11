@@ -11,15 +11,12 @@ if isDashing then {
 		instance_destroy()
 	}
 } else if hurt <= 0 and not isDead then {
-	sleep(10)
-	hp -= other.damage
-
-	//randomTaunt()
-	audioPlayPitch(sfxPlayerHurt, 2, 0.1)
-
-	hurt = hurtMax
 	
+	hurtPlayer(other.damage)
+
 	with(other) {
 		instance_destroy()	
 	}
 }
+
+if hurtNow then hurtNow = false

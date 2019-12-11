@@ -1519,6 +1519,14 @@
             }
         },
         {
+            "Key": "a0a714d7-bd98-4d00-892e-487b7a0abf16",
+            "Value": {
+                "id": "d3eae2d8-f4ff-42a0-a099-26a024e6e6e9",
+                "resourcePath": "scripts\\callSlowMo\\callSlowMo.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a11d7df6-5435-4efb-93b6-db84bb138bb1",
             "Value": {
                 "id": "8aa1fe95-d6fa-4c81-99a8-a4a1b782ce6f",
@@ -1884,6 +1892,14 @@
                 "id": "3d0988ad-5a45-433b-8bf3-16bbc7b134a9",
                 "resourcePath": "scripts\\formulaSpeedMult\\formulaSpeedMult.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d6f3e74d-1de2-443e-9e16-a313f27230fa",
+            "Value": {
+                "id": "9a93b35f-8d8d-4168-ba7a-e6c8df267994",
+                "resourcePath": "objects\\_FRAMECONTROL\\_FRAMECONTROL.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2269,7 +2285,8 @@
         "a11d7df6-5435-4efb-93b6-db84bb138bb1",
         "05f0eec6-5205-41dd-b164-253ba789d617",
         "49802bba-dbae-4851-be2d-323e7bff3097",
-        "1e4b241d-e7b2-4fec-b241-1eaa9d7d01fa"
+        "1e4b241d-e7b2-4fec-b241-1eaa9d7d01fa",
+        "a0a714d7-bd98-4d00-892e-487b7a0abf16"
     ],
     "tutorial": ""
 }
