@@ -48,7 +48,7 @@ if not isDead {
 			playerFireSecondary(dir)
 
 			audioPlayPitch(sfxPlayerShoot, 1, 0.8, 0.05)
-			screenShake(5)
+			screenShake(6)
 			
 			bulletKickX += lengthdir_x(secondaryKick, dir)
 			bulletKickY += lengthdir_y(secondaryKick, dir)

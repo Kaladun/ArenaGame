@@ -11,9 +11,18 @@ if debug then {
 }
 
 if instance_exists(objPlayer) then {
-	for(i = 0; i < objPlayer.hpMax; i++) {
-		frame = 0
-		if i+1 > objPlayer.hp then {frame = 1}
+	hpRoll = objPlayer.hp
+	for(i = 0; i < ceil(objPlayer.hpMax/10); i++) {
+		if hpRoll >= 10 then {
+			frame = 10
+			hpRoll -= 10
+		} else if hpRoll <= 0 then {
+			frame = 0
+		} else {
+			frame = hpRoll
+			hpRoll = 0
+		}
+	 
 		draw_sprite(sprHeart, frame, 3 + 10 * i, 3)	
 	}
 	

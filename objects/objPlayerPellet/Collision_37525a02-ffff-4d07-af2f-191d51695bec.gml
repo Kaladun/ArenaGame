@@ -3,6 +3,7 @@ if not other.bulletImmune then {
 	other.hp -= damage
 	other.hurtKnockback = 1
 	other.hurtDirection = direction
+	other.hurtIntensity = 1.5
 }
 
 instance_destroy()

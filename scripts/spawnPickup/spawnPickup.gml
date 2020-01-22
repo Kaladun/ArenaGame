@@ -7,9 +7,12 @@ if random(1) < spawnWeightHP then {
 	instance_create_depth(x,y,depth,objHealthPickup)
 } else if random_range(0,1-spawnWeightHP) < spawnWeightAmmo then {
 	instance_create_depth(x,y,depth,objAmmoPickup)	
-} else {
+} 
+
+// temp disabled death drops. money only
+/*else {
 	instance_create_depth(x,y,depth,objPickup)	
-}
+}*/
 
 //createTextPop(x,y-20,string(100*spawnWeightHP)+","+string(100*spawnWeightAmmo))
 

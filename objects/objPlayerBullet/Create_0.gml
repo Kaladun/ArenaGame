@@ -1,11 +1,11 @@
-speedMax = 5 * computeBulletSpeedMult()
+speedMax = 6 * computeBulletSpeedMult()
 image_speed = 0
 image_index = global.bulletPlayerFrame
 
 image_xscale = computeThiccness()
 image_yscale = image_xscale
 
-damage = 10
+damage = 12
 
 bounceTotal = computeBounceCount()
 isHoming = false
