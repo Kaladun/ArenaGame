@@ -3,7 +3,7 @@ if instance_exists(objPlayer) then {
 		objPlayer.hp -= argument0
 		objPlayer.hurt = objPlayer.hurtMax
 		objPlayer.hurtNow = true
-		audioPlayPitch(sfxPlayerHurt, 3, 0.1)
+		audioPlayPitch(sfxPlayerHurt, 3, 1, 0.1)
 		sleep(10)
 		
 		comboDamagePenalty()

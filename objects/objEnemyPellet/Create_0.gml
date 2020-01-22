@@ -13,4 +13,4 @@ bounceTotal = 1
 
 createFlash(2)
 
-damage = 1
+damage = 5

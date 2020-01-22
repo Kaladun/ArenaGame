@@ -8,7 +8,7 @@ if hp <= 0 then {
 	instance_destroy()
 	
 	if audio_exists(dieSFX) then {
-		audioPlayPitch(dieSFX, 2, 0.05)
+		audioPlayPitch(dieSFX, 2, 1, 0.05)
 	}	
 	
 	sleep(dieSleep)

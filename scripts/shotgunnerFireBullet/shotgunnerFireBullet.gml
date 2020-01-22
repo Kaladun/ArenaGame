@@ -13,6 +13,6 @@ for(i = -ls; i <= ls; i++) {
 	
 createShell(px,py,argument0)
 	
-audioPlayPitch(sfxEnemyShoot, 0.5, 0.1)
-audioPlayPitch(sfxEnemyShoot, 0.5, 0.3)
+audioPlayPitch(sfxEnemyShoot, 0.5, 1, 0.1)
+audioPlayPitch(sfxEnemyShoot, 0.5, 1, 0.3)
 screenShake(3)

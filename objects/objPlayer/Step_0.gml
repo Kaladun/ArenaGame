@@ -17,28 +17,47 @@ if not isDead {
 		dir = inputDirection()
 		computeGunAngle(dir)
 		
-	// BULLET
+	// PRIMARY SHOT
 
-		if (bulletCooldown <= 0 and _INPUT.shoot) or (bulletQueue and bulletCooldown <= ceil(bulletCooldownSpam * computeCooldownMult() )) {
-			bulletCooldown += bulletCooldownMax / computeCooldownMult()
-			bulletQueue = false
+		if (primaryCooldown <= 0 and _INPUT.shootPrimary) or (primaryQueue and primaryCooldown <= ceil(primaryCooldownSpam * computeCooldownMult() )) {
+			primaryCooldown += primaryCooldownMax / computeCooldownMult()
+			primaryQueue = false
 			
-			playerFireBullet(objPlayerBullet, dir)
+			playerFirePrimary(dir)
 			
 			if random(1) < computeBackblastOdds() then {
-				playerFireBullet(objPlayerBullet, dir + 180)	
+				playerFirePrimary(dir + 180)	
 			}
 			
-			audioPlayPitch(sfxPlayerShoot, 1, 0.1)
+			audioPlayPitch(sfxPlayerShoot, 1, 1, 0.1)
 			screenShake(3)
 			
-			bulletKickX += lengthdir_x(bulletKick, dir)
-			bulletKickY += lengthdir_y(bulletKick, dir)
+			bulletKickX += lengthdir_x(primaryKick, dir)
+			bulletKickY += lengthdir_y(primaryKick, dir)
 			
-		} else if _INPUT.shootPressed {
-			bulletQueue = true
+		} else if _INPUT.shootPrimaryPressed {
+			primaryQueue = true
 		}
-		
+
+	// SECONDARY SHOT
+
+		if (secondaryCooldown <= 0 and (_INPUT.shootSecondaryPressed or secondaryQueue)) {
+			secondaryCooldown += secondaryCooldownMax / computeCooldownMult()
+			secondaryQueue = false
+			
+			playerFireSecondary(dir)
+
+			audioPlayPitch(sfxPlayerShoot, 1, 0.8, 0.05)
+			screenShake(5)
+			
+			bulletKickX += lengthdir_x(secondaryKick, dir)
+			bulletKickY += lengthdir_y(secondaryKick, dir)
+			
+		} else if _INPUT.shootSecondaryPressed and secondaryCooldown <= secondaryCooldownMax / (2 * computeCooldownMult()) {
+			secondaryQueue = true
+		}
+
+
 	// GRENADE
 		
 		if grenadeCount > 0 then {
@@ -62,7 +81,7 @@ if not isDead {
 	// DASH	
 	
 		if _INPUT.dashPressed then {
-			audioPlayPitch(sfxDash, 2, 0.1)
+			audioPlayPitch(sfxDash, 2, 1, 0.1)
 			
 			if dx != 0 or dy != 0 then {
 				dashDir = darctan2(-dy, dx)
@@ -90,10 +109,14 @@ if not isDead {
 	
 
 	
-	if bulletCooldown > 0 then {
-		bulletCooldown -= global.timeWarp	
+	if primaryCooldown > 0 then {
+		primaryCooldown -= global.timeWarp	
 	}
-	
+
+	if secondaryCooldown > 0 then {
+		secondaryCooldown -= global.timeWarp	
+	}
+
 	x = clamp(x,6,room_width-6)
 	y = clamp(y,6,room_height-6)
 

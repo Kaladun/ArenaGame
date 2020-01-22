@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "1c5df2fb-b33b-41a0-afdc-443655708be1",
+            "Value": {
+                "id": "a2788dd3-522f-47cc-bc64-905476744deb",
+                "resourcePath": "scripts\\playerFirePrimary\\playerFirePrimary.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1cb1ff60-509a-4185-ae25-1ef5098b28d0",
             "Value": {
                 "id": "7be3400b-ab52-4c37-9216-d425fab7bb9a",
@@ -2071,6 +2079,14 @@
             }
         },
         {
+            "Key": "f15a82f3-2cfa-4e5d-8f33-cb0ae4898b15",
+            "Value": {
+                "id": "528404dc-0fc2-4de0-86aa-ae1bc9bcafe5",
+                "resourcePath": "scripts\\playerFireSecondary\\playerFireSecondary.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f180f1f6-c07b-47c8-90b1-e2a71b2b8b74",
             "Value": {
                 "id": "23042026-b4f9-4f8b-bdae-cd153b2e7c0f",
@@ -2187,6 +2203,8 @@
         "17e62077-e181-445a-b817-990519f4dc02",
         "1cb1ff60-509a-4185-ae25-1ef5098b28d0",
         "9669c902-381c-4605-9753-5eb916b06fd2",
+        "1c5df2fb-b33b-41a0-afdc-443655708be1",
+        "f15a82f3-2cfa-4e5d-8f33-cb0ae4898b15",
         "12987302-7bd1-463d-bcfe-2a0f64626de0",
         "6fe9156c-8f2d-497c-81de-ba51c2e58173",
         "22ab5923-cf9d-4508-b768-dd78e01e4c81",

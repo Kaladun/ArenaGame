@@ -14,5 +14,5 @@ if timer <= 0 then {
 }
 
 if timer = timerSound then {
-	audioPlayPitch(sfxSpawn,0,0.05)	
+	audioPlayPitch(sfxSpawn,0,1,0.05)	
 }

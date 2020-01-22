@@ -1,6 +1,6 @@
 event_inherited()
 
-hp = 12 + enemyHPScale(1.5,3)
+hp = 120 + enemyHPScale(15,3)
 
 
 // BEHAVIOR CONTROL

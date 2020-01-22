@@ -1,6 +1,6 @@
 event_inherited()
 
-hp = 3
+hp = 30
 hurtSFX = sfxEnemyHurt
 dieSFX = sfxDie
 

@@ -2,18 +2,24 @@ baseVel = 2
 vel = 2
 
 dir = 0
-hpMax = 5
-hp = 5
+hpMax = 50
+hp = 50
 
 hurt = 0
 hurtMax = 120
 hurtNow = false
 
-bulletCooldown = 0
-bulletCooldownMax = 20
-bulletCooldownSpam = 3
-bulletQueue = false
-bulletKick = -2
+primaryCooldown = 0
+primaryCooldownMax = 20
+primaryCooldownSpam = 4
+primaryQueue = false
+primaryKick = -2
+
+secondaryCooldown = 0
+secondaryCooldownMax = 48
+secondaryQueue = false
+secondaryKick = -4
+
 
 bulletKickX = 0
 bulletKickY = 0

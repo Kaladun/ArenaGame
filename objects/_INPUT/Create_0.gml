@@ -8,7 +8,14 @@ dx = 0
 dy = 0
 lx = 0
 ly = 0
-shoot = 0
-shootPressed = 0
+
+shootPrimary = 0
+shootPrimaryPressed = 0
+
+shootSecondary = 0
+shootSecondaryPressed = 0
+
 dashPressed = 0
 grenadePressed = 0
+grenadeDown = 0
+grenadeReleased = 0 

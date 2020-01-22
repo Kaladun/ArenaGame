@@ -4,7 +4,7 @@ if isHurt then {
 
 	
 	if audio_exists(hurtSFX) then {
-		audioPlayPitch( hurtSFX, 0, 0.1)
+		audioPlayPitch(hurtSFX, 0.1, 1, 0.1)
 	}
 	
 	screenShake(hurtShake)

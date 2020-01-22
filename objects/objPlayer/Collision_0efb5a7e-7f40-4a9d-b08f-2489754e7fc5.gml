@@ -1,6 +1,6 @@
 if isDashing then {
 	with(other) {
-		audioPlayPitch(sfxReflect, 2, 0.1)
+		audioPlayPitch(sfxReflect, 2, 1, 0.1)
 		
 		var b = instance_create_depth(x,y,depth,objPlayerBullet)	
 		b.direction = direction + 180 + random_range(-60,60) 

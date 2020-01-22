@@ -6,13 +6,13 @@ timer = 36
 blastTime = 24
 radius = 20 * image_xscale
 
-enemyDamage = 5
-playerDamage = 2
+enemyDamage = 50
+playerDamage = 20
 
 screenShake(12)
 sleep(6)
 
-audioPlayPitch(sfxExplosion, 1, 0.1)
+audioPlayPitch(sfxExplosion, 1, 1, 0.1)
 
 depth = -2000
 

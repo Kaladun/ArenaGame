@@ -5,7 +5,7 @@ image_index = global.bulletPlayerFrame
 image_xscale = computeThiccness()
 image_yscale = image_xscale
 
-damage = 1
+damage = 10
 
 bounceTotal = computeBounceCount()
 isHoming = false
