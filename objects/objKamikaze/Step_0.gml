@@ -7,7 +7,7 @@ if random(1) < 0.0067 then {
 
 if point_distance(x,y,objPlayer.x,objPlayer.y) <= chaseRange and chaseDelay <= 0 then {	
 	if vel = velDefault and t <= 0 then {
-		var tp = createTextAnchor(x,y,"!",self.id,0,-3)
+		var tp = createTextAnchor(x,y,"!!!",self.id,0,-8)
 		tp.t = 30
 		t = 120
 	}	
