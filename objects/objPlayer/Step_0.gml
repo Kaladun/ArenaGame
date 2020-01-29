@@ -15,7 +15,10 @@ if not isDead {
 		moveOffScreen()
 		
 		dir = inputDirection()
+		
+		
 		computeGunAngle(dir)
+		computeGunValues()
 		
 	// PRIMARY SHOT
 
@@ -29,7 +32,7 @@ if not isDead {
 				playerFirePrimary(dir + 180)	
 			}
 			
-			audioPlayPitch(sfxPlayerShoot, 1, 1, 0.1)
+			audioPlayPitch(sfxPlayerShoot, 1, 0.8, 0.1)
 			screenShake(3)
 			
 			bulletKickX += lengthdir_x(primaryKick, dir)
@@ -47,7 +50,7 @@ if not isDead {
 			
 			playerFireSecondary(dir)
 
-			audioPlayPitch(sfxPlayerShoot, 1, 0.8, 0.05)
+			audioPlayPitch(sfxShotgun, 1, 1, 0.05)
 			screenShake(6)
 			
 			bulletKickX += lengthdir_x(secondaryKick, dir)

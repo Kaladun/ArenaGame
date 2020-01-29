@@ -34,3 +34,6 @@ if isDashing then {
 	da = ds * random_range(0.7,1)
 	draw_sprite_ext(sprDeflectAura, 0, x, y, image_xscale, image_yscale, dashDir, -1, da)	
 }
+
+draw_set_color(c_red)
+draw_circle(getGunBarrelX(), getGunBarrelY(), 2, 1)

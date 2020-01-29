@@ -1,5 +1,5 @@
-var px = x + lengthdir_x(6,argument0)
-var py = y + lengthdir_y(6,argument0)
+var px = getGunBarrelX()
+var py = getGunBarrelY()
 
 var locShotgunOdds = 5 + computeShotgunOdds(1)
 locShotgunOdds += random(1)

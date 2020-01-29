@@ -35,6 +35,11 @@ surface_resize(application_surface, global.gameWidth, global.gameHeight)
 display_set_gui_maximize(global.cameraScale, global.cameraScale, 0, 0)
 
 
+global.fntPixel5 = font_add_sprite(sprPixelFont5, ord(" "), 1, 1)
+draw_set_font(global.fntPixel5)
+
+
+
 // ENUMS
 
 enum shop {
@@ -54,6 +59,16 @@ enum stat {
 	predict,
 	worth,
 }
+
+enum waveVal {
+	basic,
+	skill,
+	elite,
+	total,
+	name,
+}
+
+// GUN SHIT
 
 n = 0
 
@@ -109,6 +124,9 @@ global.upgradeTotal = n
 global.moneyPerWorth = 3
 
 
+
 // START
 
-room_goto(roomArena)
+global.timeWarp = 1
+
+room_goto(roomPrep)

@@ -16,10 +16,10 @@ cameraLookProportion = 0.4
 cameraLookPad = 64
 cameraAngle = 0
 
-cameraMinX = _WAVEMANAGER.leftX - 64 + 8
-cameraMaxX = _WAVEMANAGER.rightX + 64 - cameraW + 8
-cameraMinY = _WAVEMANAGER.topY - 64 - 8
-cameraMaxY = _WAVEMANAGER.bottomY + 64 - cameraH + 8
+cameraMinX = -100 //_WAVEMANAGER.leftX - 64 + 8
+cameraMaxX = 1100 //_WAVEMANAGER.rightX + 64 - cameraW + 8
+cameraMinY = -100 //_WAVEMANAGER.topY - 64 - 8
+cameraMaxY = 1100 //_WAVEMANAGER.bottomY + 64 - cameraH + 8
 
 cameraUpdateBounds = false
 

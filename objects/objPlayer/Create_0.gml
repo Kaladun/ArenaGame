@@ -46,4 +46,10 @@ drawGunOffsetX = -4
 drawGunOffsetY = -6
 drawGunAngle = 0
 
+drawGunLength = 12
+drawGunHeight = -2
+
+drawGunX = x
+drawGunY = y
+
 imageSpeedInit()

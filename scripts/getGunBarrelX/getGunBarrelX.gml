@@ -1,0 +1,1 @@
+return x + (drawGunOffsetX + lengthdir_x(drawGunLength, drawGunAngle) + lengthdir_x(drawGunHeight, drawGunAngle + 90 * image_xscale)) * image_xscale

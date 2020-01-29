@@ -37,6 +37,12 @@ drawGunOffsetY = -8
 drawGunAngle = 0
 gunSprite = sprEnemyBasicGun
 
+drawGunLength = 6
+drawGunHeight = 0
+
+drawGunX = x
+drawGunY = y
+
 sst = 0
 
 imageSpeedInit()
