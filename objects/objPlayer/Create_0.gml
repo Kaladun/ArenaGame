@@ -13,12 +13,12 @@ primaryCooldown = 0
 primaryCooldownMax = 20
 primaryCooldownSpam = 4
 primaryQueue = false
-primaryKick = -2
+primaryKick = -1.5
 
 secondaryCooldown = 0
 secondaryCooldownMax = 48
 secondaryQueue = false
-secondaryKick = -4
+secondaryKick = -3
 
 
 bulletKickX = 0

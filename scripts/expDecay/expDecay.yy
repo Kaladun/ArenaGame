@@ -1,8 +1,8 @@
 {
-    "id": "1c5df2fb-b33b-41a0-afdc-443655708be1",
+    "id": "63fe75db-e675-4a43-b5b7-0d8f1f327989",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "playerFirePrimary",
+    "name": "expDecay",
     "IsCompatibility": false,
     "IsDnD": false
 }

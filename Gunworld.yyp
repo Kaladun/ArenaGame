@@ -1047,6 +1047,14 @@
             }
         },
         {
+            "Key": "63fe75db-e675-4a43-b5b7-0d8f1f327989",
+            "Value": {
+                "id": "228998d6-f84a-4c7d-b618-6fd9fc95680f",
+                "resourcePath": "scripts\\expDecay\\expDecay.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "649dad1c-9940-4775-aafc-f3e876cf9196",
             "Value": {
                 "id": "5fa80240-810f-46ee-87ad-297b48a63ad1",
@@ -2344,6 +2352,7 @@
         "43c3e070-5900-4449-878c-03b9bd01136b",
         "7e1d6244-bb9a-4662-b328-41ebe7009e6e",
         "e87eba56-f378-403e-b152-0e824b7acbed",
+        "63fe75db-e675-4a43-b5b7-0d8f1f327989",
         "46e92625-f01f-4b56-840e-ddf7807a89b9",
         "8c36b88f-3c88-4756-837d-8ea562960d44",
         "744bcf86-ee43-4ea7-8135-8a56b10261cc",

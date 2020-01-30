@@ -7,16 +7,15 @@ if not isDead {
 		vel = baseVel * computeSpeedMult() 
 		var tx = dx * vel + bulletKickX
 		var ty = dy * vel + bulletKickY
-		
-		bulletKickX = 0
-		bulletKickY = 0
+				
+		bulletKickX = expDecay(bulletKickX, 0.7, 0.1)
+		bulletKickY = expDecay(bulletKickY, 0.7, 0.1)
 		
 		moveBasic(tx, ty)
 		moveOffScreen()
 		
 		dir = inputDirection()
-		
-		
+				
 		computeGunAngle(dir)
 		computeGunValues()
 		
